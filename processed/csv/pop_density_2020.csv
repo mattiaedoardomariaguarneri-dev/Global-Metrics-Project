@@ -1,0 +1,188 @@
+country_name,country_code,population_density,dbpedia_uri
+Afghanistan,AFG,59.9006163469942,http://dbpedia.org/resource/Afghanistan
+Angola,AGO,26.8317413972888,http://dbpedia.org/resource/Angola
+Albania,ALB,92.2802919708029,http://dbpedia.org/resource/Albania
+Andorra,AND,164.63829787234,http://dbpedia.org/resource/Andorra
+United Arab Emirates,ARE,132.371698113208,http://dbpedia.org/resource/United_Arab_Emirates
+Argentina,ARG,16.5133665121004,http://dbpedia.org/resource/Argentina
+Armenia,ARM,105.027376627853,http://dbpedia.org/resource/Armenia
+Antigua and Barbuda,ATG,208.740909090909,http://dbpedia.org/resource/Antigua_and_Barbuda
+Australia,AUS,3.33452695130798,http://dbpedia.org/resource/Australia
+Austria,AUT,108.057004362579,http://dbpedia.org/resource/Austria
+Azerbaijan,AZE,122.124736829369,http://dbpedia.org/resource/Azerbaijan
+Burundi,BDI,491.317601246106,http://dbpedia.org/resource/Burundi
+Belgium,BEL,378.38932248967,http://dbpedia.org/resource/Belgium
+Benin,BEN,115.911395885066,http://dbpedia.org/resource/Benin
+Burkina Faso,BFA,78.5039839181287,http://dbpedia.org/resource/Burkina_Faso
+Bangladesh,BGD,1277.54493354844,http://dbpedia.org/resource/Bangladesh
+Bulgaria,BGR,60.3417096536478,http://dbpedia.org/resource/Bulgaria
+Bahrain,BHR,1875.41910828025,http://dbpedia.org/resource/Bahrain
+The Bahamas,BHS,39.5467532467532,http://dbpedia.org/resource/The_Bahamas
+Bosnia and Herzegovina,BIH,64.44041015625,http://dbpedia.org/resource/Bosnia_and_Herzegovina
+Belarus,BLR,46.211212927382,http://dbpedia.org/resource/Belarus
+Belize,BLZ,17.1333625602806,http://dbpedia.org/resource/Belize
+Bolivia,BOL,10.9076885442629,http://dbpedia.org/resource/Bolivia
+Brazil,BRA,24.9649852718428,http://dbpedia.org/resource/Brazil
+Barbados,BRB,655.111627906977,http://dbpedia.org/resource/Barbados
+Brunei,BRN,84.896394686907,http://dbpedia.org/resource/Brunei
+Bhutan,BTN,20.1889355007866,http://dbpedia.org/resource/Bhutan
+Botswana,BWA,4.17464048135797,http://dbpedia.org/resource/Botswana
+Central African Republic,CAF,8.06868278275386,http://dbpedia.org/resource/Central_African_Republic
+Canada,CAN,4.24162135453439,http://dbpedia.org/resource/Canada
+Switzerland,CHE,218.63446962171,http://dbpedia.org/resource/Switzerland
+Chile,CHL,26.0767352343796,http://dbpedia.org/resource/Chile
+China,CHN,150.305542803154,http://dbpedia.org/resource/China
+Ivory Coast,CIV,90.9290849056604,http://dbpedia.org/resource/Ivory_Coast
+Cameroon,CMR,55.4474371178947,http://dbpedia.org/resource/Cameroon
+Democratic Republic of the Congo,COD,42.3413678569066,http://dbpedia.org/resource/Democratic_Republic_of_the_Congo
+Republic of the Congo,COG,16.845654465593,http://dbpedia.org/resource/Republic_of_the_Congo
+Colombia,COL,45.6331653898152,http://dbpedia.org/resource/Colombia
+Comoros,COM,431.038688876948,http://dbpedia.org/resource/Comoros
+Cape Verde,CPV,127.711910669975,http://dbpedia.org/resource/Cape_Verde
+Costa Rica,CRI,98.5961613787701,http://dbpedia.org/resource/Costa_Rica
+Cuba,CUB,107.672003853565,http://dbpedia.org/resource/Cuba
+Cyprus,CYP,140.935822510823,http://dbpedia.org/resource/Cyprus
+Czech Republic,CZE,138.575928842168,http://dbpedia.org/resource/Czech_Republic
+Germany,DEU,238.017318755545,http://dbpedia.org/resource/Germany
+Djibouti,DJI,47.6785159620362,http://dbpedia.org/resource/Djibouti
+Dominica,DMA,90.0973333333333,http://dbpedia.org/resource/Dominica
+Denmark,DNK,145.7851,http://dbpedia.org/resource/Denmark
+Dominican Republic,DOM,228.397349102723,http://dbpedia.org/resource/Dominican_Republic
+Algeria,DZA,18.4915612115512,http://dbpedia.org/resource/Algeria
+Ecuador,ECU,70.6477089708488,http://dbpedia.org/resource/Ecuador
+Egypt,EGY,109.814781254709,http://dbpedia.org/resource/Egypt
+Spain,ESP,94.802910688937,http://dbpedia.org/resource/Spain
+Estonia,EST,31.0999298245614,http://dbpedia.org/resource/Estonia
+Ethiopia,ETH,105.370090895445,http://dbpedia.org/resource/Ethiopia
+Finland,FIN,18.1928768835954,http://dbpedia.org/resource/Finland
+Fiji,FJI,50.0800766283525,http://dbpedia.org/resource/Fiji
+France,FRA,125.431134613601,http://dbpedia.org/resource/France
+Federated States of Micronesia,FSM,158.451428571429,http://dbpedia.org/resource/Federated_States_of_Micronesia
+Gabon,GAB,9.01361819381379,http://dbpedia.org/resource/Gabon
+United Kingdom,GBR,275.881453312942,http://dbpedia.org/resource/United_Kingdom
+Georgia,GEO,65.1302704783232,http://dbpedia.org/resource/Georgia
+Ghana,GHA,140.147712389575,http://dbpedia.org/resource/Ghana
+Guinea,GIN,54.4163397362852,http://dbpedia.org/resource/Guinea
+The Gambia,GMB,248.590217391304,http://dbpedia.org/resource/The_Gambia
+Guinea Bissau,GNB,71.5951280227596,http://dbpedia.org/resource/Guinea_Bissau
+Equatorial Guinea,GNQ,61.1931550802139,http://dbpedia.org/resource/Equatorial_Guinea
+Greece,GRC,82.999216446858,http://dbpedia.org/resource/Greece
+Grenada,GRD,342.179411764706,http://dbpedia.org/resource/Grenada
+Guatemala,GTM,161.97578387458,http://dbpedia.org/resource/Guatemala
+Guyana,GUY,3.82438666287771,http://dbpedia.org/resource/Guyana
+Honduras,HND,90.4427562784878,http://dbpedia.org/resource/Honduras
+Croatia,HRV,69.946497498213,http://dbpedia.org/resource/Croatia
+Haiti,HTI,407.977068214804,http://dbpedia.org/resource/Haiti
+Hungary,HUN,105.965581854043,http://dbpedia.org/resource/Hungary
+Indonesia,IDN,146.371283592869,http://dbpedia.org/resource/Indonesia
+India,IND,471.755150192218,http://dbpedia.org/resource/India
+Ireland,IRL,73.1564377993903,http://dbpedia.org/resource/Ireland
+Iran,IRN,54.0668369799692,http://dbpedia.org/resource/Iran
+Iraq,IRQ,97.0138092276507,http://dbpedia.org/resource/Iraq
+Iceland,ISL,3.63446394922146,http://dbpedia.org/resource/Iceland
+Israel,ISR,425.836414048059,http://dbpedia.org/resource/Israel
+Italy,ITA,200.999100491348,http://dbpedia.org/resource/Italy
+Jamaica,JAM,261.379409048938,http://dbpedia.org/resource/Jamaica
+Jordan,JOR,122.364439038674,http://dbpedia.org/resource/Jordan
+Japan,JPN,346.395061728395,http://dbpedia.org/resource/Japan
+Kazakhstan,KAZ,7.21640071119013,http://dbpedia.org/resource/Kazakhstan
+Kenya,KEN,89.8940686683206,http://dbpedia.org/resource/Kenya
+Kyrgyzstan,KGZ,35.0708863399374,http://dbpedia.org/resource/Kyrgyzstan
+Cambodia,KHM,94.7511556764106,http://dbpedia.org/resource/Cambodia
+Kiribati,KIR,155.677777777778,http://dbpedia.org/resource/Kiribati
+Saint Kitts and Nevis,KNA,180.269230769231,http://dbpedia.org/resource/Saint_Kitts_and_Nevis
+South Korea,KOR,531.109006147541,http://dbpedia.org/resource/South_Korea
+Kuwait,KWT,246.928563411897,http://dbpedia.org/resource/Kuwait
+Laos,LAO,31.8307322357019,http://dbpedia.org/resource/Laos
+Lebanon,LBN,557.419159335288,http://dbpedia.org/resource/Lebanon
+Liberia,LBR,53.462032807309,http://dbpedia.org/resource/Liberia
+Libya,LBY,4.00411414346932,http://dbpedia.org/resource/Libya
+Saint Lucia,LCA,292.213114754098,http://dbpedia.org/resource/Saint_Lucia
+Liechtenstein,LIE,243.13125,http://dbpedia.org/resource/Liechtenstein
+Sri Lanka,LKA,354.332363401229,http://dbpedia.org/resource/Sri_Lanka
+Lesotho,LSO,73.6405467720685,http://dbpedia.org/resource/Lesotho
+Lithuania,LTU,44.8797349089748,http://dbpedia.org/resource/Lithuania
+Luxembourg,LUX,244.874264894386,http://dbpedia.org/resource/Luxembourg
+Latvia,LVA,30.5391129680219,http://dbpedia.org/resource/Latvia
+Morocco,MAR,81.9722339233699,http://dbpedia.org/resource/Morocco
+Moldova,MDA,91.7473260542588,http://dbpedia.org/resource/Moldova
+Madagascar,MDG,49.7654795462358,http://dbpedia.org/resource/Madagascar
+Maldives,MDV,1673.72666666667,http://dbpedia.org/resource/Maldives
+Mexico,MEX,65.227528485815,http://dbpedia.org/resource/Mexico
+Marshall Islands,MHL,237.255555555556,http://dbpedia.org/resource/Marshall_Islands
+North Macedonia,MKD,73.5973037272006,http://dbpedia.org/resource/North_Macedonia
+Mali,MLI,17.7954548062187,http://dbpedia.org/resource/Mali
+Malta,MLT,1610.90625,http://dbpedia.org/resource/Malta
+Myanmar,MMR,81.2302112859485,http://dbpedia.org/resource/Myanmar
+Montenegro,MNE,46.5866171003717,http://dbpedia.org/resource/Montenegro
+Mongolia,MNG,2.13623721809195,http://dbpedia.org/resource/Mongolia
+Mozambique,MOZ,39.1460718736489,http://dbpedia.org/resource/Mozambique
+Mauritania,MRT,4.46311341806539,http://dbpedia.org/resource/Mauritania
+Mauritius,MUS,633.957936905358,http://dbpedia.org/resource/Mauritius
+Malawi,MWI,207.190156979211,http://dbpedia.org/resource/Malawi
+Malaysia,MYS,103.148860143053,http://dbpedia.org/resource/Malaysia
+Namibia,NAM,3.31446027523716,http://dbpedia.org/resource/Namibia
+Niger,NER,18.7239385805637,http://dbpedia.org/resource/Niger
+Nigeria,NGA,234.961824609945,http://dbpedia.org/resource/Nigeria
+Nicaragua,NIC,54.5559830480306,http://dbpedia.org/resource/Nicaragua
+Netherlands,NLD,518.013068013068,http://dbpedia.org/resource/Netherlands
+Norway,NOR,14.7672152298338,http://dbpedia.org/resource/Norway
+Nepal,NPL,202.068880362749,http://dbpedia.org/resource/Nepal
+Nauru,NRU,582.15,http://dbpedia.org/resource/Nauru
+New Zealand,NZL,19.2639854164293,http://dbpedia.org/resource/New_Zealand
+Oman,OMN,14.612268174475,http://dbpedia.org/resource/Oman
+Pakistan,PAK,304.848674242424,http://dbpedia.org/resource/Pakistan
+Panama,PAN,57.87626044756,http://dbpedia.org/resource/Panama
+Peru,PER,25.65513984375,http://dbpedia.org/resource/Peru
+Philippines,PHL,375.897186168964,http://dbpedia.org/resource/Philippines
+Palau,PLW,38.6782608695652,http://dbpedia.org/resource/Palau
+Papua New Guinea,PNG,21.6750121450338,http://dbpedia.org/resource/Papua_New_Guinea
+Poland,POL,122.548420605625,http://dbpedia.org/resource/Poland
+Portugal,PRT,112.406676011074,http://dbpedia.org/resource/Portugal
+Paraguay,PRY,16.621542914674,http://dbpedia.org/resource/Paraguay
+Qatar,QAT,243.180852915579,http://dbpedia.org/resource/Qatar
+Romania,ROU,83.7328320584145,http://dbpedia.org/resource/Romania
+Russia,RUS,8.86891988517952,http://dbpedia.org/resource/Russia
+Rwanda,RWA,529.624523713012,http://dbpedia.org/resource/Rwanda
+Saudi Arabia,SAU,14.6777023663877,http://dbpedia.org/resource/Saudi_Arabia
+Sudan,SDN,25.0477682012848,http://dbpedia.org/resource/Sudan
+Senegal,SEN,87.2031319794318,http://dbpedia.org/resource/Senegal
+Singapore,SGP,7918.95125348189,http://dbpedia.org/resource/Singapore
+Solomon Islands,SLB,26.5987138263666,http://dbpedia.org/resource/Solomon_Islands
+Sierra Leone,SLE,109.622582432807,http://dbpedia.org/resource/Sierra_Leone
+El Salvador,SLV,300.901206563707,http://dbpedia.org/resource/El_Salvador
+Somalia,SOM,26.5425303663085,http://dbpedia.org/resource/Somalia
+Serbia,SRB,82.0445475086217,http://dbpedia.org/resource/Serbia
+S%C3%A3o Tom%C3%A9 and Pr%C3%ADncipe,STP,226.494791666667,http://dbpedia.org/resource/S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe
+Suriname,SUR,3.81487831013121,http://dbpedia.org/resource/Suriname
+Slovakia,SVK,113.536335274542,http://dbpedia.org/resource/Slovakia
+Slovenia,SVN,104.408881428657,http://dbpedia.org/resource/Slovenia
+Sweden,SWE,25.4209438224317,http://dbpedia.org/resource/Sweden
+Eswatini,SWZ,69.3447093023256,http://dbpedia.org/resource/Eswatini
+Seychelles,SYC,214.047826086957,http://dbpedia.org/resource/Seychelles
+Syria,SYR,114.629575777378,http://dbpedia.org/resource/Syria
+Chad,TCD,13.6790652795426,http://dbpedia.org/resource/Chad
+Togo,TGO,159.399154256297,http://dbpedia.org/resource/Togo
+Thailand,THA,140.228785061364,http://dbpedia.org/resource/Thailand
+Tajikistan,TJK,70.2450464730888,http://dbpedia.org/resource/Tajikistan
+Turkmenistan,TKM,14.7892494626859,http://dbpedia.org/resource/Turkmenistan
+East Timor,TLS,89.1763954270343,http://dbpedia.org/resource/East_Timor
+Tonga,TON,146.811111111111,http://dbpedia.org/resource/Tonga
+Trinidad and Tobago,TTO,266.418128654971,http://dbpedia.org/resource/Trinidad_and_Tobago
+Tunisia,TUN,77.0729724510814,http://dbpedia.org/resource/Tunisia
+Turkey,TUR,108.343853540013,http://dbpedia.org/resource/Turkey
+Tuvalu,TUV,346.633333333333,http://dbpedia.org/resource/Tuvalu
+Tanzania,TZA,68.8335944908557,http://dbpedia.org/resource/Tanzania
+Uganda,UGA,221.709315778975,http://dbpedia.org/resource/Uganda
+Ukraine,UKR,77.1142802899551,http://dbpedia.org/resource/Ukraine
+Uruguay,URY,19.4204548051651,http://dbpedia.org/resource/Uruguay
+United States,USA,36.248222996211,http://dbpedia.org/resource/United_States
+Uzbekistan,UZB,76.2200658118688,http://dbpedia.org/resource/Uzbekistan
+Saint Vincent and the Grenadines,VCT,265.451282051282,http://dbpedia.org/resource/Saint_Vincent_and_the_Grenadines
+Venezuela,VEN,32.2476923076923,http://dbpedia.org/resource/Venezuela
+Vietnam,VNM,312.923153250018,http://dbpedia.org/resource/Vietnam
+Vanuatu,VUT,24.5166529942576,http://dbpedia.org/resource/Vanuatu
+Samoa,WSM,76.2388489208633,http://dbpedia.org/resource/Samoa
+South Africa,ZAF,49.9240625180325,http://dbpedia.org/resource/South_Africa
+Zambia,ZMB,25.6384872005273,http://dbpedia.org/resource/Zambia
+Zimbabwe,ZWE,40.13671448882,http://dbpedia.org/resource/Zimbabwe

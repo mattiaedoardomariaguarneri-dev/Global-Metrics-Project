@@ -1,0 +1,6 @@
+Questo documento contiene una serie di link di chat create con vari agenti per definire lo scheletro del progetto, con particolare cura alla creazione della libreria contenente la Pipeline.
+NOTA: i link ai dataset sono presenti nel file README.md, con collegamento diretto alla Open World Bank
+
+Realizzazione Prompt x creazione file specifiche: https://chatgpt.com/share/6a390c40-9b84-83ed-85dd-61cbb1a97e60
+
+Raffinazione del Prompt: https://chatgpt.com/share/6a390fb9-5dfc-83eb-ae5c-82e2c5a28d62

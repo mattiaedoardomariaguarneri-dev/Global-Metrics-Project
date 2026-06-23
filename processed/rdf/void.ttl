@@ -1,0 +1,73 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://globalmetrics.org/resource/dataset/global_metrics_2020> a void:Dataset,
+        dcat:Dataset ;
+    dcterms:creator <http://globalmetrics.org/resource/agent/Mattia> ;
+    dcterms:description "A 5-star Linked Open Data dataset containing global indicators from the World Bank for the year 2020."@en ;
+    dcterms:issued "2026-06-20"^^xsd:date ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:title "Global Metrics 2020 Dataset"@en ;
+    void:entities 187 ;
+    void:triples 1374 ;
+    void:vocabulary <http://globalmetrics.org/ontology/> ;
+    owl:versionInfo "1.0" ;
+    dcat:distribution <http://globalmetrics.org/resource/distribution/csv/co2_2020>,
+        <http://globalmetrics.org/resource/distribution/csv/gdp_2020>,
+        <http://globalmetrics.org/resource/distribution/csv/global_metrics_2020>,
+        <http://globalmetrics.org/resource/distribution/csv/global_metrics_with_index_2020>,
+        <http://globalmetrics.org/resource/distribution/csv/life_exp_2020>,
+        <http://globalmetrics.org/resource/distribution/csv/pop_density_2020>,
+        <http://globalmetrics.org/resource/distribution/rdf> ;
+    prov:wasGeneratedBy <http://globalmetrics.org/resource/activity/RunPipeline> .
+
+<http://globalmetrics.org/resource/activity/RunPipeline> a prov:Activity ;
+    rdfs:label "RDF Generation Pipeline"@en ;
+    prov:startedAtTime "2026-06-20T17:11:28.800906"^^xsd:dateTime ;
+    prov:wasAssociatedWith <http://globalmetrics.org/resource/agent/Mattia> .
+
+<http://globalmetrics.org/resource/distribution/csv/co2_2020> a dcat:Distribution ;
+    dcterms:format "CSV" ;
+    dcat:downloadURL <file://processed/csv/co2_2020.csv> ;
+    dcat:mediaType "text/csv" .
+
+<http://globalmetrics.org/resource/distribution/csv/gdp_2020> a dcat:Distribution ;
+    dcterms:format "CSV" ;
+    dcat:downloadURL <file://processed/csv/gdp_2020.csv> ;
+    dcat:mediaType "text/csv" .
+
+<http://globalmetrics.org/resource/distribution/csv/global_metrics_2020> a dcat:Distribution ;
+    dcterms:format "CSV" ;
+    dcat:downloadURL <file://processed/csv/global_metrics_2020.csv> ;
+    dcat:mediaType "text/csv" .
+
+<http://globalmetrics.org/resource/distribution/csv/global_metrics_with_index_2020> a dcat:Distribution ;
+    dcterms:format "CSV" ;
+    dcat:downloadURL <file://processed/csv/global_metrics_with_index_2020.csv> ;
+    dcat:mediaType "text/csv" .
+
+<http://globalmetrics.org/resource/distribution/csv/life_exp_2020> a dcat:Distribution ;
+    dcterms:format "CSV" ;
+    dcat:downloadURL <file://processed/csv/life_exp_2020.csv> ;
+    dcat:mediaType "text/csv" .
+
+<http://globalmetrics.org/resource/distribution/csv/pop_density_2020> a dcat:Distribution ;
+    dcterms:format "CSV" ;
+    dcat:downloadURL <file://processed/csv/pop_density_2020.csv> ;
+    dcat:mediaType "text/csv" .
+
+<http://globalmetrics.org/resource/distribution/rdf> a dcat:Distribution ;
+    dcterms:format "TTL" ;
+    dcat:downloadURL <file://processed/rdf/global_metrics.ttl> ;
+    dcat:mediaType "text/turtle" .
+
+<http://globalmetrics.org/resource/agent/Mattia> a foaf:Person ;
+    foaf:mbox <mailto:mattia@university.edu> ;
+    foaf:name "Mattia"@it .
+

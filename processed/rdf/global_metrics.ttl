@@ -1,0 +1,1579 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix gmont: <http://globalmetrics.org/ontology/> .
+@prefix gmres: <http://globalmetrics.org/resource/> .
+@prefix ns1: <http://qudt.org/schema/qudt/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+gmont:exactMatchDBpedia a owl:ObjectProperty ;
+    rdfs:label "exact match DBpedia"@en ;
+    rdfs:comment "Links the Country to its corresponding DBpedia resource."@en ;
+    rdfs:domain gmont:Country ;
+    rdfs:isDefinedBy gmont: ;
+    rdfs:subPropertyOf owl:sameAs .
+
+gmont:hasCO2Emissions a owl:DatatypeProperty ;
+    rdfs:label "has CO2 emissions"@en ;
+    dcterms:date "2020"^^xsd:gYear ;
+    ns1:unit "Metric tons per capita"@en ;
+    rdfs:comment "The CO2 emissions (metric tons per capita)."@en ;
+    rdfs:domain gmont:Country ;
+    rdfs:isDefinedBy gmont: ;
+    rdfs:range xsd:float ;
+    skos:notation "CO2_PC" ;
+    skos:prefLabel "CO2 Emissions per capita"@en ;
+    skos:scopeNote "Emissions stemming from the burning of fossil fuels and the manufacture of cement."@en ;
+    prov:wasDerivedFrom <https://data.worldbank.org/indicator/EN.ATM.CO2E.PC> .
+
+gmont:hasGDPPerCapita a owl:DatatypeProperty ;
+    rdfs:label "has GDP per capita"@en ;
+    dcterms:date "2020"^^xsd:gYear ;
+    ns1:unit "Current US$"@en ;
+    rdfs:comment "The Gross Domestic Product per capita in current US dollars."@en ;
+    rdfs:domain gmont:Country ;
+    rdfs:isDefinedBy gmont: ;
+    rdfs:range xsd:float ;
+    skos:notation "GDP_PC" ;
+    skos:prefLabel "GDP per capita (US$)"@en ;
+    skos:scopeNote "GDP divided by midyear population."@en ;
+    prov:wasDerivedFrom <https://data.worldbank.org/indicator/NY.GDP.PCAP.CD> .
+
+gmont:hasLifeExpectancy a owl:DatatypeProperty ;
+    rdfs:label "has life expectancy"@en ;
+    dcterms:date "2020"^^xsd:gYear ;
+    ns1:unit "Years"@en ;
+    rdfs:comment "The life expectancy at birth, total (years)."@en ;
+    rdfs:domain gmont:Country ;
+    rdfs:isDefinedBy gmont: ;
+    rdfs:range xsd:float ;
+    skos:notation "LIFE_EXP" ;
+    skos:prefLabel "Life Expectancy at Birth"@en ;
+    skos:scopeNote "Indicates the number of years a newborn infant would live if prevailing patterns of mortality at the time of its birth were to stay the same."@en ;
+    prov:wasDerivedFrom <https://data.worldbank.org/indicator/SP.DYN.LE00.IN> .
+
+gmont:hasPopulationDensity a owl:DatatypeProperty ;
+    rdfs:label "has population density"@en ;
+    dcterms:date "2020"^^xsd:gYear ;
+    ns1:unit "People per sq. km"@en ;
+    rdfs:comment "The population density (people per sq. km)."@en ;
+    rdfs:domain gmont:Country ;
+    rdfs:isDefinedBy gmont: ;
+    rdfs:range xsd:float ;
+    skos:notation "POP_DENS" ;
+    skos:prefLabel "Population Density"@en ;
+    skos:scopeNote "Calculated as total population divided by land area."@en ;
+    prov:wasDerivedFrom <https://data.worldbank.org/indicator/EN.POP.DNST> .
+
+gmres:AFG a gmont:Country ;
+    rdfs:label "Afghanistan"@en ;
+    gmont:exactMatchDBpedia dbpedia:Afghanistan ;
+    gmont:hasCO2Emissions "1.78783097605654"^^xsd:float ;
+    gmont:hasGDPPerCapita "510.787063366811"^^xsd:float ;
+    gmont:hasLifeExpectancy "61.454"^^xsd:float ;
+    gmont:hasPopulationDensity "59.9006163469942"^^xsd:float .
+
+gmres:AGO a gmont:Country ;
+    rdfs:label "Angola"@en ;
+    gmont:exactMatchDBpedia dbpedia:Angola ;
+    gmont:hasCO2Emissions "4.7419437422323"^^xsd:float ;
+    gmont:hasGDPPerCapita "1759.35619918264"^^xsd:float ;
+    gmont:hasLifeExpectancy "63.116"^^xsd:float ;
+    gmont:hasPopulationDensity "26.8317413972888"^^xsd:float .
+
+gmres:ALB a gmont:Country ;
+    rdfs:label "Albania"@en ;
+    gmont:exactMatchDBpedia dbpedia:Albania ;
+    gmont:hasCO2Emissions "12.3564009219659"^^xsd:float ;
+    gmont:hasGDPPerCapita "6027.91350716348"^^xsd:float ;
+    gmont:hasLifeExpectancy "77.824"^^xsd:float ;
+    gmont:hasPopulationDensity "92.2802919708029"^^xsd:float .
+
+gmres:AND a gmont:Country ;
+    rdfs:label "Andorra"@en ;
+    gmont:exactMatchDBpedia dbpedia:Andorra ;
+    gmont:hasCO2Emissions "46.2171839382239"^^xsd:float ;
+    gmont:hasGDPPerCapita "37361.1070081615"^^xsd:float ;
+    gmont:hasLifeExpectancy "79.418"^^xsd:float ;
+    gmont:hasPopulationDensity "164.63829787234"^^xsd:float .
+
+gmres:ARE a gmont:Country ;
+    rdfs:label "United Arab Emirates"@en ;
+    gmont:exactMatchDBpedia dbpedia:United_Arab_Emirates ;
+    gmont:hasCO2Emissions "162.018173441141"^^xsd:float ;
+    gmont:hasGDPPerCapita "37991.7492971665"^^xsd:float ;
+    gmont:hasLifeExpectancy "81.936"^^xsd:float ;
+    gmont:hasPopulationDensity "132.371698113208"^^xsd:float .
+
+gmres:ARG a gmont:Country ;
+    rdfs:label "Argentina"@en ;
+    gmont:exactMatchDBpedia dbpedia:Argentina ;
+    gmont:hasCO2Emissions "27.2449403233104"^^xsd:float ;
+    gmont:hasGDPPerCapita "8535.59938004389"^^xsd:float ;
+    gmont:hasLifeExpectancy "75.878"^^xsd:float ;
+    gmont:hasPopulationDensity "16.5133665121004"^^xsd:float .
+
+gmres:ARM a gmont:Country ;
+    rdfs:label "Armenia"@en ;
+    gmont:exactMatchDBpedia dbpedia:Armenia ;
+    gmont:hasCO2Emissions "19.2374700956085"^^xsd:float ;
+    gmont:hasGDPPerCapita "4268.68093304583"^^xsd:float ;
+    gmont:hasLifeExpectancy "73.3756097560976"^^xsd:float ;
+    gmont:hasPopulationDensity "105.027376627853"^^xsd:float .
+
+gmres:ATG a gmont:Country ;
+    rdfs:label "Antigua and Barbuda"@en ;
+    gmont:exactMatchDBpedia dbpedia:Antigua_and_Barbuda ;
+    gmont:hasCO2Emissions "40.973840973841"^^xsd:float ;
+    gmont:hasGDPPerCapita "15369.6082250401"^^xsd:float ;
+    gmont:hasLifeExpectancy "77.161"^^xsd:float ;
+    gmont:hasPopulationDensity "208.740909090909"^^xsd:float .
+
+gmres:AUS a gmont:Country ;
+    rdfs:label "Australia"@en ;
+    gmont:exactMatchDBpedia dbpedia:Australia ;
+    gmont:hasCO2Emissions "118.198657330084"^^xsd:float ;
+    gmont:hasGDPPerCapita "51983.4523666382"^^xsd:float ;
+    gmont:hasLifeExpectancy "83.2"^^xsd:float ;
+    gmont:hasPopulationDensity "3.33452695130798"^^xsd:float .
+
+gmres:AUT a gmont:Country ;
+    rdfs:label "Austria"@en ;
+    gmont:exactMatchDBpedia dbpedia:Austria ;
+    gmont:hasCO2Emissions "53.0611658986837"^^xsd:float ;
+    gmont:hasGDPPerCapita "48716.4098900349"^^xsd:float ;
+    gmont:hasLifeExpectancy "81.1926829268293"^^xsd:float ;
+    gmont:hasPopulationDensity "108.057004362579"^^xsd:float .
+
+gmres:AZE a gmont:Country ;
+    rdfs:label "Azerbaijan"@en ;
+    gmont:exactMatchDBpedia dbpedia:Azerbaijan ;
+    gmont:hasCO2Emissions "27.1907965831382"^^xsd:float ;
+    gmont:hasGDPPerCapita "4229.91064904503"^^xsd:float ;
+    gmont:hasLifeExpectancy "70.312"^^xsd:float ;
+    gmont:hasPopulationDensity "122.124736829369"^^xsd:float .
+
+gmres:BDI a gmont:Country ;
+    rdfs:label "Burundi"@en ;
+    gmont:exactMatchDBpedia dbpedia:Burundi ;
+    gmont:hasCO2Emissions "0.467072174682189"^^xsd:float ;
+    gmont:hasGDPPerCapita "255.8324539389"^^xsd:float ;
+    gmont:hasLifeExpectancy "62.569"^^xsd:float ;
+    gmont:hasPopulationDensity "491.317601246106"^^xsd:float .
+
+gmres:BEL a gmont:Country ;
+    rdfs:label "Belgium"@en ;
+    gmont:exactMatchDBpedia dbpedia:Belgium ;
+    gmont:hasCO2Emissions "59.1850452619745"^^xsd:float ;
+    gmont:hasGDPPerCapita "45906.2875805246"^^xsd:float ;
+    gmont:hasLifeExpectancy "80.6951219512195"^^xsd:float ;
+    gmont:hasPopulationDensity "378.38932248967"^^xsd:float .
+
+gmres:BEN a gmont:Country ;
+    rdfs:label "Benin"@en ;
+    gmont:exactMatchDBpedia dbpedia:Benin ;
+    gmont:hasCO2Emissions "5.04963844771581"^^xsd:float ;
+    gmont:hasGDPPerCapita "1200.19426557789"^^xsd:float ;
+    gmont:hasLifeExpectancy "60.154"^^xsd:float ;
+    gmont:hasPopulationDensity "115.911395885066"^^xsd:float .
+
+gmres:BFA a gmont:Country ;
+    rdfs:label "Burkina Faso"@en ;
+    gmont:exactMatchDBpedia dbpedia:Burkina_Faso ;
+    gmont:hasCO2Emissions "2.02826550998006"^^xsd:float ;
+    gmont:hasGDPPerCapita "825.237038782475"^^xsd:float ;
+    gmont:hasLifeExpectancy "60.454"^^xsd:float ;
+    gmont:hasPopulationDensity "78.5039839181287"^^xsd:float .
+
+gmres:BGD a gmont:Country ;
+    rdfs:label "Bangladesh"@en ;
+    gmont:exactMatchDBpedia dbpedia:Bangladesh ;
+    gmont:hasCO2Emissions "4.08518047421676"^^xsd:float ;
+    gmont:hasGDPPerCapita "2248.85078828233"^^xsd:float ;
+    gmont:hasLifeExpectancy "71.421"^^xsd:float ;
+    gmont:hasPopulationDensity "1277.54493354844"^^xsd:float .
+
+gmres:BGR a gmont:Country ;
+    rdfs:label "Bulgaria"@en ;
+    gmont:exactMatchDBpedia dbpedia:Bulgaria ;
+    gmont:hasCO2Emissions "39.38624303524"^^xsd:float ;
+    gmont:hasGDPPerCapita "10760.211975413"^^xsd:float ;
+    gmont:hasLifeExpectancy "73.3560975609756"^^xsd:float ;
+    gmont:hasPopulationDensity "60.3417096536478"^^xsd:float .
+
+gmres:BHR a gmont:Country ;
+    rdfs:label "Bahrain"@en ;
+    gmont:exactMatchDBpedia dbpedia:Bahrain ;
+    gmont:hasCO2Emissions "175.815262452207"^^xsd:float ;
+    gmont:hasGDPPerCapita "24342.8444554718"^^xsd:float ;
+    gmont:hasLifeExpectancy "78.683"^^xsd:float ;
+    gmont:hasPopulationDensity "1875.41910828025"^^xsd:float .
+
+gmres:BHS a gmont:Country ;
+    rdfs:label "The Bahamas"@en ;
+    gmont:exactMatchDBpedia dbpedia:The_Bahamas ;
+    gmont:hasCO2Emissions "48.3380118138809"^^xsd:float ;
+    gmont:hasGDPPerCapita "26178.7537607708"^^xsd:float ;
+    gmont:hasLifeExpectancy "72.994"^^xsd:float ;
+    gmont:hasPopulationDensity "39.5467532467532"^^xsd:float .
+
+gmres:BIH a gmont:Country ;
+    rdfs:label "Bosnia and Herzegovina"@en ;
+    gmont:exactMatchDBpedia dbpedia:Bosnia_and_Herzegovina ;
+    gmont:hasCO2Emissions "50.4984469958025"^^xsd:float ;
+    gmont:hasGDPPerCapita "6130.31187968266"^^xsd:float ;
+    gmont:hasLifeExpectancy "76.04"^^xsd:float ;
+    gmont:hasPopulationDensity "64.44041015625"^^xsd:float .
+
+gmres:BLR a gmont:Country ;
+    rdfs:label "Belarus"@en ;
+    gmont:exactMatchDBpedia dbpedia:Belarus ;
+    gmont:hasCO2Emissions "46.739258367207"^^xsd:float ;
+    gmont:hasGDPPerCapita "6542.85579976768"^^xsd:float ;
+    gmont:hasLifeExpectancy "72.1385609756098"^^xsd:float ;
+    gmont:hasPopulationDensity "46.211212927382"^^xsd:float .
+
+gmres:BLZ a gmont:Country ;
+    rdfs:label "Belize"@en ;
+    gmont:exactMatchDBpedia dbpedia:Belize ;
+    gmont:hasCO2Emissions "13.9288617217114"^^xsd:float ;
+    gmont:hasGDPPerCapita "5238.54078175696"^^xsd:float ;
+    gmont:hasLifeExpectancy "71.58"^^xsd:float ;
+    gmont:hasPopulationDensity "17.1333625602806"^^xsd:float .
+
+gmres:BOL a gmont:Country ;
+    rdfs:label "Bolivia"@en ;
+    gmont:exactMatchDBpedia dbpedia:Bolivia ;
+    gmont:hasCO2Emissions "12.3157175648253"^^xsd:float ;
+    gmont:hasGDPPerCapita "3580.96761778303"^^xsd:float ;
+    gmont:hasLifeExpectancy "62.906"^^xsd:float ;
+    gmont:hasPopulationDensity "10.9076885442629"^^xsd:float .
+
+gmres:BRA a gmont:Country ;
+    rdfs:label "Brazil"@en ;
+    gmont:exactMatchDBpedia dbpedia:Brazil ;
+    gmont:hasCO2Emissions "15.5401868505188"^^xsd:float ;
+    gmont:hasGDPPerCapita "7074.19407495707"^^xsd:float ;
+    gmont:hasLifeExpectancy "74.506"^^xsd:float ;
+    gmont:hasPopulationDensity "24.9649852718428"^^xsd:float .
+
+gmres:BRB a gmont:Country ;
+    rdfs:label "Barbados"@en ;
+    gmont:exactMatchDBpedia dbpedia:Barbados ;
+    gmont:hasCO2Emissions "31.238969265354"^^xsd:float ;
+    gmont:hasGDPPerCapita "19194.4919736739"^^xsd:float ;
+    gmont:hasLifeExpectancy "76.647"^^xsd:float ;
+    gmont:hasPopulationDensity "655.111627906977"^^xsd:float .
+
+gmres:BRN a gmont:Country ;
+    rdfs:label "Brunei"@en ;
+    gmont:exactMatchDBpedia dbpedia:Brunei ;
+    gmont:hasCO2Emissions "173.646499518931"^^xsd:float ;
+    gmont:hasGDPPerCapita "26834.3592233943"^^xsd:float ;
+    gmont:hasLifeExpectancy "75.114"^^xsd:float ;
+    gmont:hasPopulationDensity "84.896394686907"^^xsd:float .
+
+gmres:BTN a gmont:Country ;
+    rdfs:label "Bhutan"@en ;
+    gmont:exactMatchDBpedia dbpedia:Bhutan ;
+    gmont:hasCO2Emissions "10.7204345338418"^^xsd:float ;
+    gmont:hasGDPPerCapita "3191.66906999331"^^xsd:float ;
+    gmont:hasLifeExpectancy "72.253"^^xsd:float ;
+    gmont:hasPopulationDensity "20.1889355007866"^^xsd:float .
+
+gmres:BWA a gmont:Country ;
+    rdfs:label "Botswana"@en ;
+    gmont:exactMatchDBpedia dbpedia:Botswana ;
+    gmont:hasCO2Emissions "18.1077049106936"^^xsd:float ;
+    gmont:hasGDPPerCapita "6323.2974967659"^^xsd:float ;
+    gmont:hasLifeExpectancy "67.643"^^xsd:float ;
+    gmont:hasPopulationDensity "4.17464048135797"^^xsd:float .
+
+gmres:CAF a gmont:Country ;
+    rdfs:label "Central African Republic"@en ;
+    gmont:exactMatchDBpedia dbpedia:Central_African_Republic ;
+    gmont:hasCO2Emissions "0.35425658148388"^^xsd:float ;
+    gmont:hasGDPPerCapita "462.879071294011"^^xsd:float ;
+    gmont:hasLifeExpectancy "50.596"^^xsd:float ;
+    gmont:hasPopulationDensity "8.06868278275386"^^xsd:float .
+
+gmres:CAN a gmont:Country ;
+    rdfs:label "Canada"@en ;
+    gmont:exactMatchDBpedia dbpedia:Canada ;
+    gmont:hasCO2Emissions "108.779642191483"^^xsd:float ;
+    gmont:hasGDPPerCapita "43537.839298904"^^xsd:float ;
+    gmont:hasLifeExpectancy "81.53"^^xsd:float ;
+    gmont:hasPopulationDensity "4.24162135453439"^^xsd:float .
+
+gmres:CHE a gmont:Country ;
+    rdfs:label "Switzerland"@en ;
+    gmont:exactMatchDBpedia dbpedia:Switzerland ;
+    gmont:hasCO2Emissions "32.3365825180273"^^xsd:float ;
+    gmont:hasGDPPerCapita "85897.7843338323"^^xsd:float ;
+    gmont:hasLifeExpectancy "83.0"^^xsd:float ;
+    gmont:hasPopulationDensity "218.63446962171"^^xsd:float .
+
+gmres:CHL a gmont:Country ;
+    rdfs:label "Chile"@en ;
+    gmont:exactMatchDBpedia dbpedia:Chile ;
+    gmont:hasCO2Emissions "35.161208508773"^^xsd:float ;
+    gmont:hasGDPPerCapita "13114.815470545"^^xsd:float ;
+    gmont:hasLifeExpectancy "79.349"^^xsd:float ;
+    gmont:hasPopulationDensity "26.0767352343796"^^xsd:float .
+
+gmres:CHN a gmont:Country ;
+    rdfs:label "China"@en ;
+    gmont:exactMatchDBpedia dbpedia:China ;
+    gmont:hasCO2Emissions "62.0491032527815"^^xsd:float ;
+    gmont:hasGDPPerCapita "10627.4637989619"^^xsd:float ;
+    gmont:hasLifeExpectancy "78.019"^^xsd:float ;
+    gmont:hasPopulationDensity "150.305542803154"^^xsd:float .
+
+gmres:CIV a gmont:Country ;
+    rdfs:label "Ivory Coast"@en ;
+    gmont:exactMatchDBpedia dbpedia:Ivory_Coast ;
+    gmont:hasCO2Emissions "3.25077885512306"^^xsd:float ;
+    gmont:hasGDPPerCapita "2179.72934832935"^^xsd:float ;
+    gmont:hasLifeExpectancy "60.14"^^xsd:float ;
+    gmont:hasPopulationDensity "90.9290849056604"^^xsd:float .
+
+gmres:CMR a gmont:Country ;
+    rdfs:label "Cameroon"@en ;
+    gmont:exactMatchDBpedia dbpedia:Cameroon ;
+    gmont:hasCO2Emissions "2.99826126425088"^^xsd:float ;
+    gmont:hasGDPPerCapita "1555.60370660749"^^xsd:float ;
+    gmont:hasLifeExpectancy "61.674"^^xsd:float ;
+    gmont:hasPopulationDensity "55.4474371178947"^^xsd:float .
+
+gmres:COD a gmont:Country ;
+    rdfs:label "Democratic Republic of the Congo"@en ;
+    gmont:exactMatchDBpedia dbpedia:Democratic_Republic_of_the_Congo ;
+    gmont:hasCO2Emissions "0.26067824678543"^^xsd:float ;
+    gmont:hasGDPPerCapita "486.425572682256"^^xsd:float ;
+    gmont:hasLifeExpectancy "60.428"^^xsd:float ;
+    gmont:hasPopulationDensity "42.3413678569066"^^xsd:float .
+
+gmres:COG a gmont:Country ;
+    rdfs:label "Republic of the Congo"@en ;
+    gmont:exactMatchDBpedia dbpedia:Republic_of_the_Congo ;
+    gmont:hasCO2Emissions "10.0367333581894"^^xsd:float ;
+    gmont:hasGDPPerCapita "1993.586671931"^^xsd:float ;
+    gmont:hasLifeExpectancy "64.391"^^xsd:float ;
+    gmont:hasPopulationDensity "16.845654465593"^^xsd:float .
+
+gmres:COL a gmont:Country ;
+    rdfs:label "Colombia"@en ;
+    gmont:exactMatchDBpedia dbpedia:Colombia ;
+    gmont:hasCO2Emissions "12.4180753825662"^^xsd:float ;
+    gmont:hasGDPPerCapita "5339.68711357943"^^xsd:float ;
+    gmont:hasLifeExpectancy "74.757"^^xsd:float ;
+    gmont:hasPopulationDensity "45.6331653898152"^^xsd:float .
+
+gmres:COM a gmont:Country ;
+    rdfs:label "Comoros"@en ;
+    gmont:exactMatchDBpedia dbpedia:Comoros ;
+    gmont:hasCO2Emissions "3.25689746280543"^^xsd:float ;
+    gmont:hasGDPPerCapita "1519.34665556206"^^xsd:float ;
+    gmont:hasLifeExpectancy "65.756"^^xsd:float ;
+    gmont:hasPopulationDensity "431.038688876948"^^xsd:float .
+
+gmres:CPV a gmont:Country ;
+    rdfs:label "Cape Verde"@en ;
+    gmont:exactMatchDBpedia dbpedia:Cape_Verde ;
+    gmont:hasCO2Emissions "8.52121378552794"^^xsd:float ;
+    gmont:hasGDPPerCapita "3539.22661248299"^^xsd:float ;
+    gmont:hasLifeExpectancy "73.818"^^xsd:float ;
+    gmont:hasPopulationDensity "127.711910669975"^^xsd:float .
+
+gmres:CRI a gmont:Country ;
+    rdfs:label "Costa Rica"@en ;
+    gmont:exactMatchDBpedia dbpedia:Costa_Rica ;
+    gmont:hasCO2Emissions "10.8799643965915"^^xsd:float ;
+    gmont:hasGDPPerCapita "12394.0493969492"^^xsd:float ;
+    gmont:hasLifeExpectancy "79.725"^^xsd:float ;
+    gmont:hasPopulationDensity "98.5961613787701"^^xsd:float .
+
+gmres:CUB a gmont:Country ;
+    rdfs:label "Cuba"@en ;
+    gmont:exactMatchDBpedia dbpedia:Cuba ;
+    gmont:hasCO2Emissions "17.2221574277978"^^xsd:float ;
+    gmont:hasGDPPerCapita "9605.27914559614"^^xsd:float ;
+    gmont:hasLifeExpectancy "77.407"^^xsd:float ;
+    gmont:hasPopulationDensity "107.672003853565"^^xsd:float .
+
+gmres:CYP a gmont:Country ;
+    rdfs:label "Cyprus"@en ;
+    gmont:exactMatchDBpedia dbpedia:Cyprus ;
+    gmont:hasCO2Emissions "43.7759840715874"^^xsd:float ;
+    gmont:hasGDPPerCapita "28130.341796875"^^xsd:float ;
+    gmont:hasLifeExpectancy "81.23"^^xsd:float ;
+    gmont:hasPopulationDensity "140.935822510823"^^xsd:float .
+
+gmres:CZE a gmont:Country ;
+    rdfs:label "Czech Republic"@en ;
+    gmont:exactMatchDBpedia dbpedia:Czech_Republic ;
+    gmont:hasCO2Emissions "66.4321399667111"^^xsd:float ;
+    gmont:hasGDPPerCapita "23472.8915454417"^^xsd:float ;
+    gmont:hasLifeExpectancy "78.2268292682927"^^xsd:float ;
+    gmont:hasPopulationDensity "138.575928842168"^^xsd:float .
+
+gmres:DEU a gmont:Country ;
+    rdfs:label "Germany"@en ;
+    gmont:exactMatchDBpedia dbpedia:Germany ;
+    gmont:hasCO2Emissions "58.0417682253472"^^xsd:float ;
+    gmont:hasGDPPerCapita "47394.8734504469"^^xsd:float ;
+    gmont:hasLifeExpectancy "81.0414634146342"^^xsd:float ;
+    gmont:hasPopulationDensity "238.017318755545"^^xsd:float .
+
+gmres:DJI a gmont:Country ;
+    rdfs:label "Djibouti"@en ;
+    gmont:exactMatchDBpedia dbpedia:Djibouti ;
+    gmont:hasCO2Emissions "3.13863336990302"^^xsd:float ;
+    gmont:hasGDPPerCapita "2844.88810647853"^^xsd:float ;
+    gmont:hasLifeExpectancy "64.2"^^xsd:float ;
+    gmont:hasPopulationDensity "47.6785159620362"^^xsd:float .
+
+gmres:DMA a gmont:Country ;
+    rdfs:label "Dominica"@en ;
+    gmont:exactMatchDBpedia dbpedia:Dominica ;
+    gmont:hasCO2Emissions "18.0901451489687"^^xsd:float ;
+    gmont:hasGDPPerCapita "7827.74842680426"^^xsd:float ;
+    gmont:hasLifeExpectancy "71.269"^^xsd:float ;
+    gmont:hasPopulationDensity "90.0973333333333"^^xsd:float .
+
+gmres:DNK a gmont:Country ;
+    rdfs:label "Denmark"@en ;
+    gmont:exactMatchDBpedia dbpedia:Denmark ;
+    gmont:hasCO2Emissions "37.5298984601307"^^xsd:float ;
+    gmont:hasGDPPerCapita "60985.4885601514"^^xsd:float ;
+    gmont:hasLifeExpectancy "81.6024390243903"^^xsd:float ;
+    gmont:hasPopulationDensity "145.7851"^^xsd:float .
+
+gmres:DOM a gmont:Country ;
+    rdfs:label "Dominican Republic"@en ;
+    gmont:exactMatchDBpedia dbpedia:Dominican_Republic ;
+    gmont:hasCO2Emissions "16.6414537753153"^^xsd:float ;
+    gmont:hasGDPPerCapita "7135.22273255899"^^xsd:float ;
+    gmont:hasLifeExpectancy "72.636"^^xsd:float ;
+    gmont:hasPopulationDensity "228.397349102723"^^xsd:float .
+
+gmres:DZA a gmont:Country ;
+    rdfs:label "Algeria"@en ;
+    gmont:exactMatchDBpedia dbpedia:Algeria ;
+    gmont:hasCO2Emissions "29.7457869624608"^^xsd:float ;
+    gmont:hasGDPPerCapita "3743.5419522929"^^xsd:float ;
+    gmont:hasLifeExpectancy "73.257"^^xsd:float ;
+    gmont:hasPopulationDensity "18.4915612115512"^^xsd:float .
+
+gmres:ECU a gmont:Country ;
+    rdfs:label "Ecuador"@en ;
+    gmont:exactMatchDBpedia dbpedia:Ecuador ;
+    gmont:hasCO2Emissions "15.6606027940265"^^xsd:float ;
+    gmont:hasGDPPerCapita "5463.64515348598"^^xsd:float ;
+    gmont:hasLifeExpectancy "72.004"^^xsd:float ;
+    gmont:hasPopulationDensity "70.6477089708488"^^xsd:float .
+
+gmres:EGY a gmont:Country ;
+    rdfs:label "Egypt"@en ;
+    gmont:exactMatchDBpedia dbpedia:Egypt ;
+    gmont:hasCO2Emissions "15.6889805767143"^^xsd:float ;
+    gmont:hasGDPPerCapita "3511.11381026379"^^xsd:float ;
+    gmont:hasLifeExpectancy "69.79"^^xsd:float ;
+    gmont:hasPopulationDensity "109.814781254709"^^xsd:float .
+
+gmres:ESP a gmont:Country ;
+    rdfs:label "Spain"@en ;
+    gmont:exactMatchDBpedia dbpedia:Spain ;
+    gmont:hasCO2Emissions "34.2367565697128"^^xsd:float ;
+    gmont:hasGDPPerCapita "27233.9426461608"^^xsd:float ;
+    gmont:hasLifeExpectancy "82.2317073170732"^^xsd:float ;
+    gmont:hasPopulationDensity "94.802910688937"^^xsd:float .
+
+gmres:EST a gmont:Country ;
+    rdfs:label "Estonia"@en ;
+    gmont:exactMatchDBpedia dbpedia:Estonia ;
+    gmont:hasCO2Emissions "42.7071985269894"^^xsd:float ;
+    gmont:hasGDPPerCapita "23933.9939421065"^^xsd:float ;
+    gmont:hasLifeExpectancy "78.5951219512195"^^xsd:float ;
+    gmont:hasPopulationDensity "31.0999298245614"^^xsd:float .
+
+gmres:ETH a gmont:Country ;
+    rdfs:label "Ethiopia"@en ;
+    gmont:exactMatchDBpedia dbpedia:Ethiopia ;
+    gmont:hasCO2Emissions "1.23545417272164"^^xsd:float ;
+    gmont:hasGDPPerCapita "829.790982547947"^^xsd:float ;
+    gmont:hasLifeExpectancy "65.969"^^xsd:float ;
+    gmont:hasPopulationDensity "105.370090895445"^^xsd:float .
+
+gmres:FIN a gmont:Country ;
+    rdfs:label "Finland"@en ;
+    gmont:exactMatchDBpedia dbpedia:Finland ;
+    gmont:hasCO2Emissions "52.561161021806"^^xsd:float ;
+    gmont:hasGDPPerCapita "48828.6846862799"^^xsd:float ;
+    gmont:hasLifeExpectancy "81.9317073170732"^^xsd:float ;
+    gmont:hasPopulationDensity "18.1928768835954"^^xsd:float .
+
+gmres:FJI a gmont:Country ;
+    rdfs:label "Fiji"@en ;
+    gmont:exactMatchDBpedia dbpedia:Fiji ;
+    gmont:hasCO2Emissions "8.93677030753285"^^xsd:float ;
+    gmont:hasGDPPerCapita "4620.6457238014"^^xsd:float ;
+    gmont:hasLifeExpectancy "66.924"^^xsd:float ;
+    gmont:hasPopulationDensity "50.0800766283525"^^xsd:float .
+
+gmres:FRA a gmont:Country ;
+    rdfs:label "France"@en ;
+    gmont:exactMatchDBpedia dbpedia:France ;
+    gmont:hasCO2Emissions "31.6294596150393"^^xsd:float ;
+    gmont:hasGDPPerCapita "39169.8606000707"^^xsd:float ;
+    gmont:hasLifeExpectancy "82.1756097560976"^^xsd:float ;
+    gmont:hasPopulationDensity "125.431134613601"^^xsd:float .
+
+gmres:FSM a gmont:Country ;
+    rdfs:label "Federated States of Micronesia"@en ;
+    gmont:exactMatchDBpedia dbpedia:Federated_States_of_Micronesia ;
+    gmont:hasCO2Emissions "7.67131108058445"^^xsd:float ;
+    gmont:hasGDPPerCapita "3362.02802120524"^^xsd:float ;
+    gmont:hasLifeExpectancy "65.878"^^xsd:float ;
+    gmont:hasPopulationDensity "158.451428571429"^^xsd:float .
+
+gmres:GAB a gmont:Country ;
+    rdfs:label "Gabon"@en ;
+    gmont:exactMatchDBpedia dbpedia:Gabon ;
+    gmont:hasCO2Emissions "18.6661886011918"^^xsd:float ;
+    gmont:hasGDPPerCapita "6605.80346077565"^^xsd:float ;
+    gmont:hasLifeExpectancy "67.073"^^xsd:float ;
+    gmont:hasPopulationDensity "9.01361819381379"^^xsd:float .
+
+gmres:GBR a gmont:Country ;
+    rdfs:label "United Kingdom"@en ;
+    gmont:exactMatchDBpedia dbpedia:United_Kingdom ;
+    gmont:hasCO2Emissions "36.8091380072108"^^xsd:float ;
+    gmont:hasGDPPerCapita "40812.6794663879"^^xsd:float ;
+    gmont:hasLifeExpectancy "80.331756097561"^^xsd:float ;
+    gmont:hasPopulationDensity "275.881453312942"^^xsd:float .
+
+gmres:GEO a gmont:Country ;
+    rdfs:label "Georgia"@en ;
+    gmont:exactMatchDBpedia dbpedia:Georgia ;
+    gmont:hasCO2Emissions "22.0376735695122"^^xsd:float ;
+    gmont:hasGDPPerCapita "4300.85701291207"^^xsd:float ;
+    gmont:hasLifeExpectancy "73.509"^^xsd:float ;
+    gmont:hasPopulationDensity "65.1302704783232"^^xsd:float .
+
+gmres:GHA a gmont:Country ;
+    rdfs:label "Ghana"@en ;
+    gmont:exactMatchDBpedia dbpedia:Ghana ;
+    gmont:hasCO2Emissions "4.8230996251414"^^xsd:float ;
+    gmont:hasGDPPerCapita "2195.45481659987"^^xsd:float ;
+    gmont:hasLifeExpectancy "64.309"^^xsd:float ;
+    gmont:hasPopulationDensity "140.147712389575"^^xsd:float .
+
+gmres:GIN a gmont:Country ;
+    rdfs:label "Guinea"@en ;
+    gmont:exactMatchDBpedia dbpedia:Guinea ;
+    gmont:hasCO2Emissions "2.74916920689976"^^xsd:float ;
+    gmont:hasGDPPerCapita "1053.66097696415"^^xsd:float ;
+    gmont:hasLifeExpectancy "59.35"^^xsd:float ;
+    gmont:hasPopulationDensity "54.4163397362852"^^xsd:float .
+
+gmres:GMB a gmont:Country ;
+    rdfs:label "The Gambia"@en ;
+    gmont:exactMatchDBpedia dbpedia:The_Gambia ;
+    gmont:hasCO2Emissions "1.90023679144676"^^xsd:float ;
+    gmont:hasGDPPerCapita "720.335143352133"^^xsd:float ;
+    gmont:hasLifeExpectancy "64.418"^^xsd:float ;
+    gmont:hasPopulationDensity "248.590217391304"^^xsd:float .
+
+gmres:GNB a gmont:Country ;
+    rdfs:label "Guinea Bissau"@en ;
+    gmont:exactMatchDBpedia dbpedia:Guinea_Bissau ;
+    gmont:hasCO2Emissions "1.3056669517439"^^xsd:float ;
+    gmont:hasGDPPerCapita "846.915855715971"^^xsd:float ;
+    gmont:hasLifeExpectancy "61.343"^^xsd:float ;
+    gmont:hasPopulationDensity "71.5951280227596"^^xsd:float .
+
+gmres:GNQ a gmont:Country ;
+    rdfs:label "Equatorial Guinea"@en ;
+    gmont:exactMatchDBpedia dbpedia:Equatorial_Guinea ;
+    gmont:hasCO2Emissions "21.8058468129738"^^xsd:float ;
+    gmont:hasGDPPerCapita "5764.05502912947"^^xsd:float ;
+    gmont:hasLifeExpectancy "62.141"^^xsd:float ;
+    gmont:hasPopulationDensity "61.1931550802139"^^xsd:float .
+
+gmres:GRC a gmont:Country ;
+    rdfs:label "Greece"@en ;
+    gmont:exactMatchDBpedia dbpedia:Greece ;
+    gmont:hasCO2Emissions "38.1374794961471"^^xsd:float ;
+    gmont:hasGDPPerCapita "17886.733165236"^^xsd:float ;
+    gmont:hasLifeExpectancy "81.2878048780488"^^xsd:float ;
+    gmont:hasPopulationDensity "82.999216446858"^^xsd:float .
+
+gmres:GRD a gmont:Country ;
+    rdfs:label "Grenada"@en ;
+    gmont:exactMatchDBpedia dbpedia:Grenada ;
+    gmont:hasCO2Emissions "20.9925361668405"^^xsd:float ;
+    gmont:hasGDPPerCapita "8968.55890108484"^^xsd:float ;
+    gmont:hasLifeExpectancy "75.019"^^xsd:float ;
+    gmont:hasPopulationDensity "342.179411764706"^^xsd:float .
+
+gmres:GTM a gmont:Country ;
+    rdfs:label "Guatemala"@en ;
+    gmont:exactMatchDBpedia dbpedia:Guatemala ;
+    gmont:hasCO2Emissions "8.00325868518554"^^xsd:float ;
+    gmont:hasGDPPerCapita "4477.61785000665"^^xsd:float ;
+    gmont:hasLifeExpectancy "69.971"^^xsd:float ;
+    gmont:hasPopulationDensity "161.97578387458"^^xsd:float .
+
+gmres:GUY a gmont:Country ;
+    rdfs:label "Guyana"@en ;
+    gmont:exactMatchDBpedia dbpedia:Guyana ;
+    gmont:hasCO2Emissions "27.7821681330453"^^xsd:float ;
+    gmont:hasGDPPerCapita "6775.70939096303"^^xsd:float ;
+    gmont:hasLifeExpectancy "67.751"^^xsd:float ;
+    gmont:hasPopulationDensity "3.82438666287771"^^xsd:float .
+
+gmres:HND a gmont:Country ;
+    rdfs:label "Honduras"@en ;
+    gmont:exactMatchDBpedia dbpedia:Honduras ;
+    gmont:hasCO2Emissions "6.98328937360023"^^xsd:float ;
+    gmont:hasGDPPerCapita "2307.61494319511"^^xsd:float ;
+    gmont:hasLifeExpectancy "70.864"^^xsd:float ;
+    gmont:hasPopulationDensity "90.4427562784878"^^xsd:float .
+
+gmres:HRV a gmont:Country ;
+    rdfs:label "Croatia"@en ;
+    gmont:exactMatchDBpedia dbpedia:Croatia ;
+    gmont:hasCO2Emissions "30.8856431338446"^^xsd:float ;
+    gmont:hasGDPPerCapita "14807.5608543265"^^xsd:float ;
+    gmont:hasLifeExpectancy "77.5243902439024"^^xsd:float ;
+    gmont:hasPopulationDensity "69.946497498213"^^xsd:float .
+
+gmres:HTI a gmont:Country ;
+    rdfs:label "Haiti"@en ;
+    gmont:exactMatchDBpedia dbpedia:Haiti ;
+    gmont:hasCO2Emissions "2.27052019399652"^^xsd:float ;
+    gmont:hasGDPPerCapita "1290.32538667383"^^xsd:float ;
+    gmont:hasLifeExpectancy "63.773"^^xsd:float ;
+    gmont:hasPopulationDensity "407.977068214804"^^xsd:float .
+
+gmres:HUN a gmont:Country ;
+    rdfs:label "Hungary"@en ;
+    gmont:exactMatchDBpedia dbpedia:Hungary ;
+    gmont:hasCO2Emissions "36.733223256383"^^xsd:float ;
+    gmont:hasGDPPerCapita "16386.9308821258"^^xsd:float ;
+    gmont:hasLifeExpectancy "75.419512195122"^^xsd:float ;
+    gmont:hasPopulationDensity "105.965581854043"^^xsd:float .
+
+gmres:IDN a gmont:Country ;
+    rdfs:label "Indonesia"@en ;
+    gmont:exactMatchDBpedia dbpedia:Indonesia ;
+    gmont:hasCO2Emissions "16.5732716977177"^^xsd:float ;
+    gmont:hasGDPPerCapita "3853.70288774146"^^xsd:float ;
+    gmont:hasLifeExpectancy "68.817"^^xsd:float ;
+    gmont:hasPopulationDensity "146.371283592869"^^xsd:float .
+
+gmres:IND a gmont:Country ;
+    rdfs:label "India"@en ;
+    gmont:exactMatchDBpedia dbpedia:India ;
+    gmont:hasCO2Emissions "12.6087458553318"^^xsd:float ;
+    gmont:hasGDPPerCapita "1907.04251637669"^^xsd:float ;
+    gmont:hasLifeExpectancy "70.156"^^xsd:float ;
+    gmont:hasPopulationDensity "471.755150192218"^^xsd:float .
+
+gmres:IRL a gmont:Country ;
+    rdfs:label "Ireland"@en ;
+    gmont:exactMatchDBpedia dbpedia:Ireland ;
+    gmont:hasCO2Emissions "54.1458207214612"^^xsd:float ;
+    gmont:hasGDPPerCapita "86514.0706108754"^^xsd:float ;
+    gmont:hasLifeExpectancy "82.4560975609756"^^xsd:float ;
+    gmont:hasPopulationDensity "73.1564377993903"^^xsd:float .
+
+gmres:IRN a gmont:Country ;
+    rdfs:label "Iran"@en ;
+    gmont:exactMatchDBpedia dbpedia:Iran ;
+    gmont:hasCO2Emissions "56.5068105646186"^^xsd:float ;
+    gmont:hasGDPPerCapita "3202.50003502169"^^xsd:float ;
+    gmont:hasLifeExpectancy "74.141"^^xsd:float ;
+    gmont:hasPopulationDensity "54.0668369799692"^^xsd:float .
+
+gmres:IRQ a gmont:Country ;
+    rdfs:label "Iraq"@en ;
+    gmont:exactMatchDBpedia dbpedia:Iraq ;
+    gmont:hasCO2Emissions "30.737422557952"^^xsd:float ;
+    gmont:hasGDPPerCapita "4295.18945121228"^^xsd:float ;
+    gmont:hasLifeExpectancy "69.651"^^xsd:float ;
+    gmont:hasPopulationDensity "97.0138092276507"^^xsd:float .
+
+gmres:ISL a gmont:Country ;
+    rdfs:label "Iceland"@en ;
+    gmont:exactMatchDBpedia dbpedia:Iceland ;
+    gmont:hasCO2Emissions "31.5797229188213"^^xsd:float ;
+    gmont:hasGDPPerCapita "60127.9393575616"^^xsd:float ;
+    gmont:hasLifeExpectancy "83.0634146341463"^^xsd:float ;
+    gmont:hasPopulationDensity "3.63446394922146"^^xsd:float .
+
+gmres:ISR a gmont:Country ;
+    rdfs:label "Israel"@en ;
+    gmont:exactMatchDBpedia dbpedia:Israel ;
+    gmont:hasCO2Emissions "50.7617280333366"^^xsd:float ;
+    gmont:hasGDPPerCapita "44575.5719045492"^^xsd:float ;
+    gmont:hasLifeExpectancy "82.6487804878049"^^xsd:float ;
+    gmont:hasPopulationDensity "425.836414048059"^^xsd:float .
+
+gmres:ITA a gmont:Country ;
+    rdfs:label "Italy"@en ;
+    gmont:exactMatchDBpedia dbpedia:Italy ;
+    gmont:hasCO2Emissions "37.8589821663948"^^xsd:float ;
+    gmont:hasGDPPerCapita "32091.4866621366"^^xsd:float ;
+    gmont:hasLifeExpectancy "82.1951219512195"^^xsd:float ;
+    gmont:hasPopulationDensity "200.999100491348"^^xsd:float .
+
+gmres:JAM a gmont:Country ;
+    rdfs:label "Jamaica"@en ;
+    gmont:exactMatchDBpedia dbpedia:Jamaica ;
+    gmont:hasCO2Emissions "16.5523344617641"^^xsd:float ;
+    gmont:hasGDPPerCapita "5299.04530804283"^^xsd:float ;
+    gmont:hasLifeExpectancy "71.452"^^xsd:float ;
+    gmont:hasPopulationDensity "261.379409048938"^^xsd:float .
+
+gmres:JOR a gmont:Country ;
+    rdfs:label "Jordan"@en ;
+    gmont:exactMatchDBpedia dbpedia:Jordan ;
+    gmont:hasCO2Emissions "15.3533794119184"^^xsd:float ;
+    gmont:hasGDPPerCapita "4022.0401356135"^^xsd:float ;
+    gmont:hasLifeExpectancy "75.583"^^xsd:float ;
+    gmont:hasPopulationDensity "122.364439038674"^^xsd:float .
+
+gmres:JPN a gmont:Country ;
+    rdfs:label "Japan"@en ;
+    gmont:exactMatchDBpedia dbpedia:Japan ;
+    gmont:hasCO2Emissions "64.2519669573344"^^xsd:float ;
+    gmont:hasGDPPerCapita "40028.7341726762"^^xsd:float ;
+    gmont:hasLifeExpectancy "84.56"^^xsd:float ;
+    gmont:hasPopulationDensity "346.395061728395"^^xsd:float .
+
+gmres:KAZ a gmont:Country ;
+    rdfs:label "Kazakhstan"@en ;
+    gmont:exactMatchDBpedia dbpedia:Kazakhstan ;
+    gmont:hasCO2Emissions "90.3819464475429"^^xsd:float ;
+    gmont:hasGDPPerCapita "8781.50797787648"^^xsd:float ;
+    gmont:hasLifeExpectancy "71.195"^^xsd:float ;
+    gmont:hasPopulationDensity "7.21640071119013"^^xsd:float .
+
+gmres:KEN a gmont:Country ;
+    rdfs:label "Kenya"@en ;
+    gmont:exactMatchDBpedia dbpedia:Kenya ;
+    gmont:hasCO2Emissions "2.99263375484604"^^xsd:float ;
+    gmont:hasGDPPerCapita "1927.66459027849"^^xsd:float ;
+    gmont:hasLifeExpectancy "61.596"^^xsd:float ;
+    gmont:hasPopulationDensity "89.8940686683206"^^xsd:float .
+
+gmres:KGZ a gmont:Country ;
+    rdfs:label "Kyrgyzstan"@en ;
+    gmont:exactMatchDBpedia dbpedia:Kyrgyzstan ;
+    gmont:hasCO2Emissions "11.0398030365203"^^xsd:float ;
+    gmont:hasGDPPerCapita "1229.51766602907"^^xsd:float ;
+    gmont:hasLifeExpectancy "71.8"^^xsd:float ;
+    gmont:hasPopulationDensity "35.0708863399374"^^xsd:float .
+
+gmres:KHM a gmont:Country ;
+    rdfs:label "Cambodia"@en ;
+    gmont:exactMatchDBpedia dbpedia:Cambodia ;
+    gmont:hasCO2Emissions "9.10066927448304"^^xsd:float ;
+    gmont:hasGDPPerCapita "2081.73914242939"^^xsd:float ;
+    gmont:hasLifeExpectancy "70.059"^^xsd:float ;
+    gmont:hasPopulationDensity "94.7511556764106"^^xsd:float .
+
+gmres:KIR a gmont:Country ;
+    rdfs:label "Kiribati"@en ;
+    gmont:exactMatchDBpedia dbpedia:Kiribati ;
+    gmont:hasCO2Emissions "3.59947178226042"^^xsd:float ;
+    gmont:hasGDPPerCapita "1751.78249168214"^^xsd:float ;
+    gmont:hasLifeExpectancy "65.205"^^xsd:float ;
+    gmont:hasPopulationDensity "155.677777777778"^^xsd:float .
+
+gmres:KNA a gmont:Country ;
+    rdfs:label "Saint Kitts and Nevis"@en ;
+    gmont:exactMatchDBpedia dbpedia:Saint_Kitts_and_Nevis ;
+    gmont:hasCO2Emissions "38.7893035556862"^^xsd:float ;
+    gmont:hasGDPPerCapita "18859.0190361046"^^xsd:float ;
+    gmont:hasLifeExpectancy "71.181"^^xsd:float ;
+    gmont:hasPopulationDensity "180.269230769231"^^xsd:float .
+
+gmres:KOR a gmont:Country ;
+    rdfs:label "South Korea"@en ;
+    gmont:exactMatchDBpedia dbpedia:South_Korea ;
+    gmont:hasCO2Emissions "87.9202366514284"^^xsd:float ;
+    gmont:hasGDPPerCapita "33645.7719545073"^^xsd:float ;
+    gmont:hasLifeExpectancy "83.4268292682927"^^xsd:float ;
+    gmont:hasPopulationDensity "531.109006147541"^^xsd:float .
+
+gmres:KWT a gmont:Country ;
+    rdfs:label "Kuwait"@en ;
+    gmont:exactMatchDBpedia dbpedia:Kuwait ;
+    gmont:hasCO2Emissions "169.356882005594"^^xsd:float ;
+    gmont:hasGDPPerCapita "25236.0755848941"^^xsd:float ;
+    gmont:hasLifeExpectancy "78.7609756097561"^^xsd:float ;
+    gmont:hasPopulationDensity "246.928563411897"^^xsd:float .
+
+gmres:LAO a gmont:Country ;
+    rdfs:label "Laos"@en ;
+    gmont:exactMatchDBpedia dbpedia:Laos ;
+    gmont:hasCO2Emissions "20.9622675304352"^^xsd:float ;
+    gmont:hasGDPPerCapita "2583.77730696131"^^xsd:float ;
+    gmont:hasLifeExpectancy "68.339"^^xsd:float ;
+    gmont:hasPopulationDensity "31.8307322357019"^^xsd:float .
+
+gmres:LBN a gmont:Country ;
+    rdfs:label "Lebanon"@en ;
+    gmont:exactMatchDBpedia dbpedia:Lebanon ;
+    gmont:hasCO2Emissions "30.3375482944056"^^xsd:float ;
+    gmont:hasGDPPerCapita "5561.19166950397"^^xsd:float ;
+    gmont:hasLifeExpectancy "76.299"^^xsd:float ;
+    gmont:hasPopulationDensity "557.419159335288"^^xsd:float .
+
+gmres:LBR a gmont:Country ;
+    rdfs:label "Liberia"@en ;
+    gmont:exactMatchDBpedia dbpedia:Liberia ;
+    gmont:hasCO2Emissions "1.85471139149742"^^xsd:float ;
+    gmont:hasGDPPerCapita "616.787867006715"^^xsd:float ;
+    gmont:hasLifeExpectancy "61.267"^^xsd:float ;
+    gmont:hasPopulationDensity "53.462032807309"^^xsd:float .
+
+gmres:LBY a gmont:Country ;
+    rdfs:label "Libya"@en ;
+    gmont:exactMatchDBpedia dbpedia:Libya ;
+    gmont:hasCO2Emissions "53.462443766417"^^xsd:float ;
+    gmont:hasGDPPerCapita "6650.33810585348"^^xsd:float ;
+    gmont:hasLifeExpectancy "72.388"^^xsd:float ;
+    gmont:hasPopulationDensity "4.00411414346932"^^xsd:float .
+
+gmres:LCA a gmont:Country ;
+    rdfs:label "Saint Lucia"@en ;
+    gmont:exactMatchDBpedia dbpedia:Saint_Lucia ;
+    gmont:hasCO2Emissions "22.2811138325234"^^xsd:float ;
+    gmont:hasGDPPerCapita "8411.07474936367"^^xsd:float ;
+    gmont:hasLifeExpectancy "72.308"^^xsd:float ;
+    gmont:hasPopulationDensity "292.213114754098"^^xsd:float .
+
+gmres:LIE a gmont:Country ;
+    rdfs:label "Liechtenstein"@en ;
+    gmont:exactMatchDBpedia dbpedia:Liechtenstein ;
+    gmont:hasCO2Emissions "29.3107839818351"^^xsd:float ;
+    gmont:hasGDPPerCapita "164671.093553454"^^xsd:float ;
+    gmont:hasLifeExpectancy "81.6585365853659"^^xsd:float ;
+    gmont:hasPopulationDensity "243.13125"^^xsd:float .
+
+gmres:LKA a gmont:Country ;
+    rdfs:label "Sri Lanka"@en ;
+    gmont:exactMatchDBpedia dbpedia:Sri_Lanka ;
+    gmont:hasCO2Emissions "7.97346594278936"^^xsd:float ;
+    gmont:hasGDPPerCapita "3847.60137695639"^^xsd:float ;
+    gmont:hasLifeExpectancy "76.928"^^xsd:float ;
+    gmont:hasPopulationDensity "354.332363401229"^^xsd:float .
+
+gmres:LSO a gmont:Country ;
+    rdfs:label "Lesotho"@en ;
+    gmont:exactMatchDBpedia dbpedia:Lesotho ;
+    gmont:hasCO2Emissions "8.20513730535469"^^xsd:float ;
+    gmont:hasGDPPerCapita "918.582574704447"^^xsd:float ;
+    gmont:hasLifeExpectancy "55.133"^^xsd:float ;
+    gmont:hasPopulationDensity "73.6405467720685"^^xsd:float .
+
+gmres:LTU a gmont:Country ;
+    rdfs:label "Lithuania"@en ;
+    gmont:exactMatchDBpedia dbpedia:Lithuania ;
+    gmont:hasCO2Emissions "33.4720033203513"^^xsd:float ;
+    gmont:hasGDPPerCapita "20428.6478157394"^^xsd:float ;
+    gmont:hasLifeExpectancy "75.0292682926829"^^xsd:float ;
+    gmont:hasPopulationDensity "44.8797349089748"^^xsd:float .
+
+gmres:LUX a gmont:Country ;
+    rdfs:label "Luxembourg"@en ;
+    gmont:exactMatchDBpedia dbpedia:Luxembourg ;
+    gmont:hasCO2Emissions "99.6556258615302"^^xsd:float ;
+    gmont:hasGDPPerCapita "116860.02817236"^^xsd:float ;
+    gmont:hasLifeExpectancy "82.1439024390244"^^xsd:float ;
+    gmont:hasPopulationDensity "244.874264894386"^^xsd:float .
+
+gmres:LVA a gmont:Country ;
+    rdfs:label "Latvia"@en ;
+    gmont:exactMatchDBpedia dbpedia:Latvia ;
+    gmont:hasCO2Emissions "29.1648973479425"^^xsd:float ;
+    gmont:hasGDPPerCapita "17564.2321549354"^^xsd:float ;
+    gmont:hasLifeExpectancy "75.1853658536585"^^xsd:float ;
+    gmont:hasPopulationDensity "30.5391129680219"^^xsd:float .
+
+gmres:MAR a gmont:Country ;
+    rdfs:label "Morocco"@en ;
+    gmont:exactMatchDBpedia dbpedia:Morocco ;
+    gmont:hasCO2Emissions "14.5482110984799"^^xsd:float ;
+    gmont:hasGDPPerCapita "3268.0302734375"^^xsd:float ;
+    gmont:hasLifeExpectancy "73.133"^^xsd:float ;
+    gmont:hasPopulationDensity "81.9722339233699"^^xsd:float .
+
+gmres:MDA a gmont:Country ;
+    rdfs:label "Moldova"@en ;
+    gmont:exactMatchDBpedia dbpedia:Moldova ;
+    gmont:hasCO2Emissions "26.142770944887"^^xsd:float ;
+    gmont:hasGDPPerCapita "4375.7788930524"^^xsd:float ;
+    gmont:hasLifeExpectancy "69.914"^^xsd:float ;
+    gmont:hasPopulationDensity "91.7473260542588"^^xsd:float .
+
+gmres:MDG a gmont:Country ;
+    rdfs:label "Madagascar"@en ;
+    gmont:exactMatchDBpedia dbpedia:Madagascar ;
+    gmont:hasCO2Emissions "0.778156324759274"^^xsd:float ;
+    gmont:hasGDPPerCapita "450.771615201509"^^xsd:float ;
+    gmont:hasLifeExpectancy "62.706"^^xsd:float ;
+    gmont:hasPopulationDensity "49.7654795462358"^^xsd:float .
+
+gmres:MDV a gmont:Country ;
+    rdfs:label "Maldives"@en ;
+    gmont:exactMatchDBpedia dbpedia:Maldives ;
+    gmont:hasCO2Emissions "22.6110823850493"^^xsd:float ;
+    gmont:hasGDPPerCapita "7393.8886543933"^^xsd:float ;
+    gmont:hasLifeExpectancy "78.713"^^xsd:float ;
+    gmont:hasPopulationDensity "1673.72666666667"^^xsd:float .
+
+gmres:MEX a gmont:Country ;
+    rdfs:label "Mexico"@en ;
+    gmont:exactMatchDBpedia dbpedia:Mexico ;
+    gmont:hasCO2Emissions "24.3261309981781"^^xsd:float ;
+    gmont:hasGDPPerCapita "8841.27075039868"^^xsd:float ;
+    gmont:hasLifeExpectancy "70.449"^^xsd:float ;
+    gmont:hasPopulationDensity "65.227528485815"^^xsd:float .
+
+gmres:MHL a gmont:Country ;
+    rdfs:label "Marshall Islands"@en ;
+    gmont:exactMatchDBpedia dbpedia:Marshall_Islands ;
+    gmont:hasCO2Emissions "20.2704259092898"^^xsd:float ;
+    gmont:hasGDPPerCapita "5661.96787336674"^^xsd:float ;
+    gmont:hasLifeExpectancy "65.387"^^xsd:float ;
+    gmont:hasPopulationDensity "237.255555555556"^^xsd:float .
+
+gmres:MKD a gmont:Country ;
+    rdfs:label "North Macedonia"@en ;
+    gmont:exactMatchDBpedia dbpedia:North_Macedonia ;
+    gmont:hasCO2Emissions "27.0000620073283"^^xsd:float ;
+    gmont:hasGDPPerCapita "6659.59651070776"^^xsd:float ;
+    gmont:hasLifeExpectancy "74.3951219512195"^^xsd:float ;
+    gmont:hasPopulationDensity "73.5973037272006"^^xsd:float .
+
+gmres:MLI a gmont:Country ;
+    rdfs:label "Mali"@en ;
+    gmont:exactMatchDBpedia dbpedia:Mali ;
+    gmont:hasCO2Emissions "1.56452777133854"^^xsd:float ;
+    gmont:hasGDPPerCapita "953.242943290974"^^xsd:float ;
+    gmont:hasLifeExpectancy "58.858"^^xsd:float ;
+    gmont:hasPopulationDensity "17.7954548062187"^^xsd:float .
+
+gmres:MLT a gmont:Country ;
+    rdfs:label "Malta"@en ;
+    gmont:exactMatchDBpedia dbpedia:Malta ;
+    gmont:hasCO2Emissions "25.0044631422074"^^xsd:float ;
+    gmont:hasGDPPerCapita "31823.4363934505"^^xsd:float ;
+    gmont:hasLifeExpectancy "82.0975609756098"^^xsd:float ;
+    gmont:hasPopulationDensity "1610.90625"^^xsd:float .
+
+gmres:MMR a gmont:Country ;
+    rdfs:label "Myanmar"@en ;
+    gmont:exactMatchDBpedia dbpedia:Myanmar ;
+    gmont:hasCO2Emissions "5.07264278712779"^^xsd:float ;
+    gmont:hasGDPPerCapita "1490.21683599469"^^xsd:float ;
+    gmont:hasLifeExpectancy "66.612"^^xsd:float ;
+    gmont:hasPopulationDensity "81.2302112859485"^^xsd:float .
+
+gmres:MNE a gmont:Country ;
+    rdfs:label "Montenegro"@en ;
+    gmont:exactMatchDBpedia dbpedia:Montenegro ;
+    gmont:hasCO2Emissions "32.540487296115"^^xsd:float ;
+    gmont:hasGDPPerCapita "7538.53635992191"^^xsd:float ;
+    gmont:hasLifeExpectancy "75.9317073170732"^^xsd:float ;
+    gmont:hasPopulationDensity "46.5866171003717"^^xsd:float .
+
+gmres:MNG a gmont:Country ;
+    rdfs:label "Mongolia"@en ;
+    gmont:exactMatchDBpedia dbpedia:Mongolia ;
+    gmont:hasCO2Emissions "51.4451626807838"^^xsd:float ;
+    gmont:hasGDPPerCapita "4001.25193077703"^^xsd:float ;
+    gmont:hasLifeExpectancy "71.3490243902439"^^xsd:float ;
+    gmont:hasPopulationDensity "2.13623721809195"^^xsd:float .
+
+gmres:MOZ a gmont:Country ;
+    rdfs:label "Mozambique"@en ;
+    gmont:exactMatchDBpedia dbpedia:Mozambique ;
+    gmont:hasCO2Emissions "1.7821404217217"^^xsd:float ;
+    gmont:hasGDPPerCapita "462.433876479921"^^xsd:float ;
+    gmont:hasLifeExpectancy "61.39"^^xsd:float ;
+    gmont:hasPopulationDensity "39.1460718736489"^^xsd:float .
+
+gmres:MRT a gmont:Country ;
+    rdfs:label "Mauritania"@en ;
+    gmont:exactMatchDBpedia dbpedia:Mauritania ;
+    gmont:hasCO2Emissions "6.84141124668897"^^xsd:float ;
+    gmont:hasGDPPerCapita "1795.76459566714"^^xsd:float ;
+    gmont:hasLifeExpectancy "66.794"^^xsd:float ;
+    gmont:hasPopulationDensity "4.46311341806539"^^xsd:float .
+
+gmres:MUS a gmont:Country ;
+    rdfs:label "Mauritius"@en ;
+    gmont:exactMatchDBpedia dbpedia:Mauritius ;
+    gmont:hasCO2Emissions "23.5081128644707"^^xsd:float ;
+    gmont:hasGDPPerCapita "9135.84773751062"^^xsd:float ;
+    gmont:hasLifeExpectancy "74.1770731707317"^^xsd:float ;
+    gmont:hasPopulationDensity "633.957936905358"^^xsd:float .
+
+gmres:MWI a gmont:Country ;
+    rdfs:label "Malawi"@en ;
+    gmont:exactMatchDBpedia dbpedia:Malawi ;
+    gmont:hasCO2Emissions "0.677089265498003"^^xsd:float ;
+    gmont:hasGDPPerCapita "602.507478176106"^^xsd:float ;
+    gmont:hasLifeExpectancy "65.216"^^xsd:float ;
+    gmont:hasPopulationDensity "207.190156979211"^^xsd:float .
+
+gmres:MYS a gmont:Country ;
+    rdfs:label "Malaysia"@en ;
+    gmont:exactMatchDBpedia dbpedia:Malaysia ;
+    gmont:hasCO2Emissions "59.0697232978332"^^xsd:float ;
+    gmont:hasGDPPerCapita "9957.52626697613"^^xsd:float ;
+    gmont:hasLifeExpectancy "76.057"^^xsd:float ;
+    gmont:hasPopulationDensity "103.148860143053"^^xsd:float .
+
+gmres:NAM a gmont:Country ;
+    rdfs:label "Namibia"@en ;
+    gmont:exactMatchDBpedia dbpedia:Namibia ;
+    gmont:hasCO2Emissions "12.704361178226"^^xsd:float ;
+    gmont:hasGDPPerCapita "3878.58982993966"^^xsd:float ;
+    gmont:hasLifeExpectancy "64.071"^^xsd:float ;
+    gmont:hasPopulationDensity "3.31446027523716"^^xsd:float .
+
+gmres:NER a gmont:Country ;
+    rdfs:label "Niger"@en ;
+    gmont:exactMatchDBpedia dbpedia:Niger ;
+    gmont:hasCO2Emissions "0.722604621528247"^^xsd:float ;
+    gmont:hasGDPPerCapita "579.512495758236"^^xsd:float ;
+    gmont:hasLifeExpectancy "59.89"^^xsd:float ;
+    gmont:hasPopulationDensity "18.7239385805637"^^xsd:float .
+
+gmres:NGA a gmont:Country ;
+    rdfs:label "Nigeria"@en ;
+    gmont:exactMatchDBpedia dbpedia:Nigeria ;
+    gmont:hasCO2Emissions "4.30008140311641"^^xsd:float ;
+    gmont:hasGDPPerCapita "2797.18458068686"^^xsd:float ;
+    gmont:hasLifeExpectancy "53.072"^^xsd:float ;
+    gmont:hasPopulationDensity "234.961824609945"^^xsd:float .
+
+gmres:NIC a gmont:Country ;
+    rdfs:label "Nicaragua"@en ;
+    gmont:exactMatchDBpedia dbpedia:Nicaragua ;
+    gmont:hasCO2Emissions "5.42601683418703"^^xsd:float ;
+    gmont:hasGDPPerCapita "1938.44704754382"^^xsd:float ;
+    gmont:hasLifeExpectancy "70.766"^^xsd:float ;
+    gmont:hasPopulationDensity "54.5559830480306"^^xsd:float .
+
+gmres:NLD a gmont:Country ;
+    rdfs:label "Netherlands"@en ;
+    gmont:exactMatchDBpedia dbpedia:Netherlands ;
+    gmont:hasCO2Emissions "59.7724278301752"^^xsd:float ;
+    gmont:hasGDPPerCapita "53467.9277413737"^^xsd:float ;
+    gmont:hasLifeExpectancy "81.3585365853659"^^xsd:float ;
+    gmont:hasPopulationDensity "518.013068013068"^^xsd:float .
+
+gmres:NOR a gmont:Country ;
+    rdfs:label "Norway"@en ;
+    gmont:exactMatchDBpedia dbpedia:Norway ;
+    gmont:hasCO2Emissions "53.8006403970648"^^xsd:float ;
+    gmont:hasGDPPerCapita "68340.0181033702"^^xsd:float ;
+    gmont:hasLifeExpectancy "83.209756097561"^^xsd:float ;
+    gmont:hasPopulationDensity "14.7672152298338"^^xsd:float .
+
+gmres:NPL a gmont:Country ;
+    rdfs:label "Nepal"@en ;
+    gmont:exactMatchDBpedia dbpedia:Nepal ;
+    gmont:hasCO2Emissions "4.07492997883683"^^xsd:float ;
+    gmont:hasGDPPerCapita "1154.21517578318"^^xsd:float ;
+    gmont:hasLifeExpectancy "69.106"^^xsd:float ;
+    gmont:hasPopulationDensity "202.068880362749"^^xsd:float .
+
+gmres:NRU a gmont:Country ;
+    rdfs:label "Nauru"@en ;
+    gmont:exactMatchDBpedia dbpedia:Nauru ;
+    gmont:hasCO2Emissions "26.8940316686967"^^xsd:float ;
+    gmont:hasGDPPerCapita "10709.068810538"^^xsd:float ;
+    gmont:hasLifeExpectancy "61.527"^^xsd:float ;
+    gmont:hasPopulationDensity "582.15"^^xsd:float .
+
+gmres:NZL a gmont:Country ;
+    rdfs:label "New Zealand"@en ;
+    gmont:exactMatchDBpedia dbpedia:New_Zealand ;
+    gmont:hasCO2Emissions "49.2863934619465"^^xsd:float ;
+    gmont:hasGDPPerCapita "41997.7830324279"^^xsd:float ;
+    gmont:hasLifeExpectancy "82.2560975609756"^^xsd:float ;
+    gmont:hasPopulationDensity "19.2639854164293"^^xsd:float .
+
+gmres:OMN a gmont:Country ;
+    rdfs:label "Oman"@en ;
+    gmont:exactMatchDBpedia dbpedia:Oman ;
+    gmont:hasCO2Emissions "125.08960802254"^^xsd:float ;
+    gmont:hasGDPPerCapita "16784.8630630058"^^xsd:float ;
+    gmont:hasLifeExpectancy "77.763"^^xsd:float ;
+    gmont:hasPopulationDensity "14.612268174475"^^xsd:float .
+
+gmres:PAK a gmont:Country ;
+    rdfs:label "Pakistan"@en ;
+    gmont:exactMatchDBpedia dbpedia:Pakistan ;
+    gmont:hasCO2Emissions "6.48288172408248"^^xsd:float ;
+    gmont:hasGDPPerCapita "1278.39735206896"^^xsd:float ;
+    gmont:hasLifeExpectancy "65.701"^^xsd:float ;
+    gmont:hasPopulationDensity "304.848674242424"^^xsd:float .
+
+gmres:PAN a gmont:Country ;
+    rdfs:label "Panama"@en ;
+    gmont:exactMatchDBpedia dbpedia:Panama ;
+    gmont:hasCO2Emissions "17.8515441985322"^^xsd:float ;
+    gmont:hasGDPPerCapita "13290.5608397749"^^xsd:float ;
+    gmont:hasLifeExpectancy "76.33"^^xsd:float ;
+    gmont:hasPopulationDensity "57.87626044756"^^xsd:float .
+
+gmres:PER a gmont:Country ;
+    rdfs:label "Peru"@en ;
+    gmont:exactMatchDBpedia dbpedia:Peru ;
+    gmont:hasCO2Emissions "11.1885281489527"^^xsd:float ;
+    gmont:hasGDPPerCapita "6133.32552410183"^^xsd:float ;
+    gmont:hasLifeExpectancy "73.832"^^xsd:float ;
+    gmont:hasPopulationDensity "25.65513984375"^^xsd:float .
+
+gmres:PHL a gmont:Country ;
+    rdfs:label "Philippines"@en ;
+    gmont:exactMatchDBpedia dbpedia:Philippines ;
+    gmont:hasCO2Emissions "9.5174356133827"^^xsd:float ;
+    gmont:hasGDPPerCapita "3227.57910235199"^^xsd:float ;
+    gmont:hasLifeExpectancy "70.097"^^xsd:float ;
+    gmont:hasPopulationDensity "375.897186168964"^^xsd:float .
+
+gmres:PLW a gmont:Country ;
+    rdfs:label "Palau"@en ;
+    gmont:exactMatchDBpedia dbpedia:Palau ;
+    gmont:hasCO2Emissions "70.420654351213"^^xsd:float ;
+    gmont:hasGDPPerCapita "14708.2119536914"^^xsd:float ;
+    gmont:hasLifeExpectancy "68.689"^^xsd:float ;
+    gmont:hasPopulationDensity "38.6782608695652"^^xsd:float .
+
+gmres:PNG a gmont:Country ;
+    rdfs:label "Papua New Guinea"@en ;
+    gmont:exactMatchDBpedia dbpedia:Papua_New_Guinea ;
+    gmont:hasCO2Emissions "4.5060125296934"^^xsd:float ;
+    gmont:hasGDPPerCapita "2429.61134585269"^^xsd:float ;
+    gmont:hasLifeExpectancy "65.075"^^xsd:float ;
+    gmont:hasPopulationDensity "21.6750121450338"^^xsd:float .
+
+gmres:POL a gmont:Country ;
+    rdfs:label "Poland"@en ;
+    gmont:exactMatchDBpedia dbpedia:Poland ;
+    gmont:hasCO2Emissions "58.9405069834167"^^xsd:float ;
+    gmont:hasGDPPerCapita "16150.9304813473"^^xsd:float ;
+    gmont:hasLifeExpectancy "76.4"^^xsd:float ;
+    gmont:hasPopulationDensity "122.548420605625"^^xsd:float .
+
+gmres:PRT a gmont:Country ;
+    rdfs:label "Portugal"@en ;
+    gmont:exactMatchDBpedia dbpedia:Portugal ;
+    gmont:hasCO2Emissions "30.2792606953369"^^xsd:float ;
+    gmont:hasGDPPerCapita "22299.4044062173"^^xsd:float ;
+    gmont:hasLifeExpectancy "81.3292682926829"^^xsd:float ;
+    gmont:hasPopulationDensity "112.406676011074"^^xsd:float .
+
+gmres:PRY a gmont:Country ;
+    rdfs:label "Paraguay"@en ;
+    gmont:exactMatchDBpedia dbpedia:Paraguay ;
+    gmont:hasCO2Emissions "9.15672953656272"^^xsd:float ;
+    gmont:hasGDPPerCapita "5365.47220721104"^^xsd:float ;
+    gmont:hasLifeExpectancy "72.72"^^xsd:float ;
+    gmont:hasPopulationDensity "16.621542914674"^^xsd:float .
+
+gmres:QAT a gmont:Country ;
+    rdfs:label "Qatar"@en ;
+    gmont:exactMatchDBpedia dbpedia:Qatar ;
+    gmont:hasCO2Emissions "253.814739610598"^^xsd:float ;
+    gmont:hasGDPPerCapita "51683.5681078949"^^xsd:float ;
+    gmont:hasLifeExpectancy "80.409"^^xsd:float ;
+    gmont:hasPopulationDensity "243.180852915579"^^xsd:float .
+
+gmres:ROU a gmont:Country ;
+    rdfs:label "Romania"@en ;
+    gmont:exactMatchDBpedia dbpedia:Romania ;
+    gmont:hasCO2Emissions "28.5131000116791"^^xsd:float ;
+    gmont:hasGDPPerCapita "13009.1770573223"^^xsd:float ;
+    gmont:hasLifeExpectancy "74.2536585365854"^^xsd:float ;
+    gmont:hasPopulationDensity "83.7328320584145"^^xsd:float .
+
+gmres:RUS a gmont:Country ;
+    rdfs:label "Russia"@en ;
+    gmont:exactMatchDBpedia dbpedia:Russia ;
+    gmont:hasCO2Emissions "89.6770338671307"^^xsd:float ;
+    gmont:hasGDPPerCapita "10108.3271484375"^^xsd:float ;
+    gmont:hasLifeExpectancy "71.3387804878049"^^xsd:float ;
+    gmont:hasPopulationDensity "8.86891988517952"^^xsd:float .
+
+gmres:RWA a gmont:Country ;
+    rdfs:label "Rwanda"@en ;
+    gmont:exactMatchDBpedia dbpedia:Rwanda ;
+    gmont:hasCO2Emissions "0.840993120378094"^^xsd:float ;
+    gmont:hasGDPPerCapita "778.701498925026"^^xsd:float ;
+    gmont:hasLifeExpectancy "66.953"^^xsd:float ;
+    gmont:hasPopulationDensity "529.624523713012"^^xsd:float .
+
+gmres:SAU a gmont:Country ;
+    rdfs:label "Saudi Arabia"@en ;
+    gmont:exactMatchDBpedia dbpedia:Saudi_Arabia ;
+    gmont:hasCO2Emissions "114.132682940326"^^xsd:float ;
+    gmont:hasGDPPerCapita "24338.8307301067"^^xsd:float ;
+    gmont:hasLifeExpectancy "77.596"^^xsd:float ;
+    gmont:hasPopulationDensity "14.6777023663877"^^xsd:float .
+
+gmres:SDN a gmont:Country ;
+    rdfs:label "Sudan"@en ;
+    gmont:exactMatchDBpedia dbpedia:Sudan ;
+    gmont:hasCO2Emissions "3.743631426533"^^xsd:float ;
+    gmont:hasGDPPerCapita "577.795227050781"^^xsd:float ;
+    gmont:hasLifeExpectancy "65.124"^^xsd:float ;
+    gmont:hasPopulationDensity "25.0477682012848"^^xsd:float .
+
+gmres:SEN a gmont:Country ;
+    rdfs:label "Senegal"@en ;
+    gmont:exactMatchDBpedia dbpedia:Senegal ;
+    gmont:hasCO2Emissions "5.19840448962407"^^xsd:float ;
+    gmont:hasGDPPerCapita "1461.08720350553"^^xsd:float ;
+    gmont:hasLifeExpectancy "67.496"^^xsd:float ;
+    gmont:hasPopulationDensity "87.2031319794318"^^xsd:float .
+
+gmres:SGP a gmont:Country ;
+    rdfs:label "Singapore"@en ;
+    gmont:exactMatchDBpedia dbpedia:Singapore ;
+    gmont:hasCO2Emissions "61.4934696165382"^^xsd:float ;
+    gmont:hasGDPPerCapita "61410.0792630788"^^xsd:float ;
+    gmont:hasLifeExpectancy "83.5439024390244"^^xsd:float ;
+    gmont:hasPopulationDensity "7918.95125348189"^^xsd:float .
+
+gmres:SLB a gmont:Country ;
+    rdfs:label "Solomon Islands"@en ;
+    gmont:exactMatchDBpedia dbpedia:Solomon_Islands ;
+    gmont:hasCO2Emissions "2.58452439340211"^^xsd:float ;
+    gmont:hasGDPPerCapita "2063.32780991967"^^xsd:float ;
+    gmont:hasLifeExpectancy "69.258"^^xsd:float ;
+    gmont:hasPopulationDensity "26.5987138263666"^^xsd:float .
+
+gmres:SLE a gmont:Country ;
+    rdfs:label "Sierra Leone"@en ;
+    gmont:exactMatchDBpedia dbpedia:Sierra_Leone ;
+    gmont:hasCO2Emissions "1.01822085822513"^^xsd:float ;
+    gmont:hasGDPPerCapita "845.277557920549"^^xsd:float ;
+    gmont:hasLifeExpectancy "59.694"^^xsd:float ;
+    gmont:hasPopulationDensity "109.622582432807"^^xsd:float .
+
+gmres:SLV a gmont:Country ;
+    rdfs:label "El Salvador"@en ;
+    gmont:exactMatchDBpedia dbpedia:El_Salvador ;
+    gmont:hasCO2Emissions "8.10624194805085"^^xsd:float ;
+    gmont:hasGDPPerCapita "3997.19279583709"^^xsd:float ;
+    gmont:hasLifeExpectancy "70.244"^^xsd:float ;
+    gmont:hasPopulationDensity "300.901206563707"^^xsd:float .
+
+gmres:SOM a gmont:Country ;
+    rdfs:label "Somalia"@en ;
+    gmont:exactMatchDBpedia dbpedia:Somalia ;
+    gmont:hasCO2Emissions "0.319477226121085"^^xsd:float ;
+    gmont:hasGDPPerCapita "518.16113333875"^^xsd:float ;
+    gmont:hasLifeExpectancy "57.095"^^xsd:float ;
+    gmont:hasPopulationDensity "26.5425303663085"^^xsd:float .
+
+gmres:SRB a gmont:Country ;
+    rdfs:label "Serbia"@en ;
+    gmont:exactMatchDBpedia dbpedia:Serbia ;
+    gmont:hasCO2Emissions "53.7161373774011"^^xsd:float ;
+    gmont:hasGDPPerCapita "8098.70955668849"^^xsd:float ;
+    gmont:hasLifeExpectancy "74.4780487804878"^^xsd:float ;
+    gmont:hasPopulationDensity "82.0445475086217"^^xsd:float .
+
+gmres:STP a gmont:Country ;
+    rdfs:label "S%C3%A3o Tom%C3%A9 and Pr%C3%ADncipe"@en ;
+    gmont:exactMatchDBpedia dbpedia:S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe ;
+    gmont:hasCO2Emissions "5.1628011214731"^^xsd:float ;
+    gmont:hasGDPPerCapita "2167.22001796925"^^xsd:float ;
+    gmont:hasLifeExpectancy "67.979"^^xsd:float ;
+    gmont:hasPopulationDensity "226.494791666667"^^xsd:float .
+
+gmres:SUR a gmont:Country ;
+    rdfs:label "Suriname"@en ;
+    gmont:exactMatchDBpedia dbpedia:Suriname ;
+    gmont:hasCO2Emissions "34.2806124550089"^^xsd:float ;
+    gmont:hasGDPPerCapita "4755.39221710693"^^xsd:float ;
+    gmont:hasLifeExpectancy "72.321"^^xsd:float ;
+    gmont:hasPopulationDensity "3.81487831013121"^^xsd:float .
+
+gmres:SVK a gmont:Country ;
+    rdfs:label "Slovakia"@en ;
+    gmont:exactMatchDBpedia dbpedia:Slovakia ;
+    gmont:hasCO2Emissions "42.5524384634281"^^xsd:float ;
+    gmont:hasGDPPerCapita "19735.4858280801"^^xsd:float ;
+    gmont:hasLifeExpectancy "76.8658536585366"^^xsd:float ;
+    gmont:hasPopulationDensity "113.536335274542"^^xsd:float .
+
+gmres:SVN a gmont:Country ;
+    rdfs:label "Slovenia"@en ;
+    gmont:exactMatchDBpedia dbpedia:Slovenia ;
+    gmont:hasCO2Emissions "47.4778814308661"^^xsd:float ;
+    gmont:hasGDPPerCapita "25392.0651093612"^^xsd:float ;
+    gmont:hasLifeExpectancy "80.5317073170732"^^xsd:float ;
+    gmont:hasPopulationDensity "104.408881428657"^^xsd:float .
+
+gmres:SWE a gmont:Country ;
+    rdfs:label "Sweden"@en ;
+    gmont:exactMatchDBpedia dbpedia:Sweden ;
+    gmont:hasCO2Emissions "25.9439131450198"^^xsd:float ;
+    gmont:hasGDPPerCapita "52568.5726980146"^^xsd:float ;
+    gmont:hasLifeExpectancy "82.3560975609756"^^xsd:float ;
+    gmont:hasPopulationDensity "25.4209438224317"^^xsd:float .
+
+gmres:SWZ a gmont:Country ;
+    rdfs:label "Eswatini"@en ;
+    gmont:exactMatchDBpedia dbpedia:Eswatini ;
+    gmont:hasCO2Emissions "7.77670022148722"^^xsd:float ;
+    gmont:hasGDPPerCapita "3466.56936278145"^^xsd:float ;
+    gmont:hasLifeExpectancy "59.862"^^xsd:float ;
+    gmont:hasPopulationDensity "69.3447093023256"^^xsd:float .
+
+gmres:SYC a gmont:Country ;
+    rdfs:label "Seychelles"@en ;
+    gmont:exactMatchDBpedia dbpedia:Seychelles ;
+    gmont:hasCO2Emissions "48.644146980561"^^xsd:float ;
+    gmont:hasGDPPerCapita "14041.4754074575"^^xsd:float ;
+    gmont:hasLifeExpectancy "77.2365853658537"^^xsd:float ;
+    gmont:hasPopulationDensity "214.047826086957"^^xsd:float .
+
+gmres:SYR a gmont:Country ;
+    rdfs:label "Syria"@en ;
+    gmont:exactMatchDBpedia dbpedia:Syria ;
+    gmont:hasCO2Emissions "9.71841987002587"^^xsd:float ;
+    gmont:hasGDPPerCapita "572.355289831901"^^xsd:float ;
+    gmont:hasLifeExpectancy "71.944"^^xsd:float ;
+    gmont:hasPopulationDensity "114.629575777378"^^xsd:float .
+
+gmres:TCD a gmont:Country ;
+    rdfs:label "Chad"@en ;
+    gmont:exactMatchDBpedia dbpedia:Chad ;
+    gmont:hasCO2Emissions "0.75382549677522"^^xsd:float ;
+    gmont:hasGDPPerCapita "866.947814890409"^^xsd:float ;
+    gmont:hasLifeExpectancy "53.082"^^xsd:float ;
+    gmont:hasPopulationDensity "13.6790652795426"^^xsd:float .
+
+gmres:TGO a gmont:Country ;
+    rdfs:label "Togo"@en ;
+    gmont:exactMatchDBpedia dbpedia:Togo ;
+    gmont:hasCO2Emissions "2.28849474923542"^^xsd:float ;
+    gmont:hasGDPPerCapita "863.468665870276"^^xsd:float ;
+    gmont:hasLifeExpectancy "61.14"^^xsd:float ;
+    gmont:hasPopulationDensity "159.399154256297"^^xsd:float .
+
+gmres:THA a gmont:Country ;
+    rdfs:label "Thailand"@en ;
+    gmont:exactMatchDBpedia dbpedia:Thailand ;
+    gmont:hasCO2Emissions "29.714046448033"^^xsd:float ;
+    gmont:hasGDPPerCapita "6985.64393892574"^^xsd:float ;
+    gmont:hasLifeExpectancy "77.331"^^xsd:float ;
+    gmont:hasPopulationDensity "140.228785061364"^^xsd:float .
+
+gmres:TJK a gmont:Country ;
+    rdfs:label "Tajikistan"@en ;
+    gmont:exactMatchDBpedia dbpedia:Tajikistan ;
+    gmont:hasCO2Emissions "7.82026419420641"^^xsd:float ;
+    gmont:hasGDPPerCapita "834.311715460625"^^xsd:float ;
+    gmont:hasLifeExpectancy "68.605"^^xsd:float ;
+    gmont:hasPopulationDensity "70.2450464730888"^^xsd:float .
+
+gmres:TKM a gmont:Country ;
+    rdfs:label "Turkmenistan"@en ;
+    gmont:exactMatchDBpedia dbpedia:Turkmenistan ;
+    gmont:hasCO2Emissions "81.4726903938572"^^xsd:float ;
+    gmont:hasGDPPerCapita "5972.72356566861"^^xsd:float ;
+    gmont:hasLifeExpectancy "68.846"^^xsd:float ;
+    gmont:hasPopulationDensity "14.7892494626859"^^xsd:float .
+
+gmres:TLS a gmont:Country ;
+    rdfs:label "East Timor"@en ;
+    gmont:exactMatchDBpedia dbpedia:East_Timor ;
+    gmont:hasCO2Emissions "2.74524132785126"^^xsd:float ;
+    gmont:hasGDPPerCapita "1630.86938521256"^^xsd:float ;
+    gmont:hasLifeExpectancy "66.919"^^xsd:float ;
+    gmont:hasPopulationDensity "89.1763954270343"^^xsd:float .
+
+gmres:TON a gmont:Country ;
+    rdfs:label "Tonga"@en ;
+    gmont:exactMatchDBpedia dbpedia:Tonga ;
+    gmont:hasCO2Emissions "8.97638094514223"^^xsd:float ;
+    gmont:hasGDPPerCapita "4792.35854741522"^^xsd:float ;
+    gmont:hasLifeExpectancy "72.379"^^xsd:float ;
+    gmont:hasPopulationDensity "146.811111111111"^^xsd:float .
+
+gmres:TTO a gmont:Country ;
+    rdfs:label "Trinidad and Tobago"@en ;
+    gmont:exactMatchDBpedia dbpedia:Trinidad_and_Tobago ;
+    gmont:hasCO2Emissions "81.2569533780326"^^xsd:float ;
+    gmont:hasGDPPerCapita "15283.6270531554"^^xsd:float ;
+    gmont:hasLifeExpectancy "72.645"^^xsd:float ;
+    gmont:hasPopulationDensity "266.418128654971"^^xsd:float .
+
+gmres:TUN a gmont:Country ;
+    rdfs:label "Tunisia"@en ;
+    gmont:exactMatchDBpedia dbpedia:Tunisia ;
+    gmont:hasCO2Emissions "19.2689802259104"^^xsd:float ;
+    gmont:hasGDPPerCapita "3548.65363663803"^^xsd:float ;
+    gmont:hasLifeExpectancy "75.004"^^xsd:float ;
+    gmont:hasPopulationDensity "77.0729724510814"^^xsd:float .
+
+gmres:TUR a gmont:Country ;
+    rdfs:label "Turkey"@en ;
+    gmont:exactMatchDBpedia dbpedia:Turkey ;
+    gmont:hasCO2Emissions "38.9561203973895"^^xsd:float ;
+    gmont:hasGDPPerCapita "8798.11791709313"^^xsd:float ;
+    gmont:hasLifeExpectancy "76.525"^^xsd:float ;
+    gmont:hasPopulationDensity "108.343853540013"^^xsd:float .
+
+gmres:TUV a gmont:Country ;
+    rdfs:label "Tuvalu"@en ;
+    gmont:exactMatchDBpedia dbpedia:Tuvalu ;
+    gmont:hasCO2Emissions "4.77007859788599"^^xsd:float ;
+    gmont:hasGDPPerCapita "4976.11254109571"^^xsd:float ;
+    gmont:hasLifeExpectancy "66.357"^^xsd:float ;
+    gmont:hasPopulationDensity "346.633333333333"^^xsd:float .
+
+gmres:TZA a gmont:Country ;
+    rdfs:label "Tanzania"@en ;
+    gmont:exactMatchDBpedia dbpedia:Tanzania ;
+    gmont:hasCO2Emissions "1.8715647369614"^^xsd:float ;
+    gmont:hasGDPPerCapita "1117.41528320313"^^xsd:float ;
+    gmont:hasLifeExpectancy "66.771"^^xsd:float ;
+    gmont:hasPopulationDensity "68.8335944908557"^^xsd:float .
+
+gmres:UGA a gmont:Country ;
+    rdfs:label "Uganda"@en ;
+    gmont:exactMatchDBpedia dbpedia:Uganda ;
+    gmont:hasCO2Emissions "1.02234427861557"^^xsd:float ;
+    gmont:hasGDPPerCapita "845.766463890124"^^xsd:float ;
+    gmont:hasLifeExpectancy "66.41"^^xsd:float ;
+    gmont:hasPopulationDensity "221.709315778975"^^xsd:float .
+
+gmres:UKR a gmont:Country ;
+    rdfs:label "Ukraine"@en ;
+    gmont:exactMatchDBpedia dbpedia:Ukraine ;
+    gmont:hasCO2Emissions "30.0176728256231"^^xsd:float ;
+    gmont:hasGDPPerCapita "3709.76928710938"^^xsd:float ;
+    gmont:hasLifeExpectancy "73.283"^^xsd:float ;
+    gmont:hasPopulationDensity "77.1142802899551"^^xsd:float .
+
+gmres:URY a gmont:Country ;
+    rdfs:label "Uruguay"@en ;
+    gmont:exactMatchDBpedia dbpedia:Uruguay ;
+    gmont:hasCO2Emissions "15.1977524039934"^^xsd:float ;
+    gmont:hasGDPPerCapita "15757.5355995779"^^xsd:float ;
+    gmont:hasLifeExpectancy "78.381"^^xsd:float ;
+    gmont:hasPopulationDensity "19.4204548051651"^^xsd:float .
+
+gmres:USA a gmont:Country ;
+    rdfs:label "United States"@en ;
+    gmont:exactMatchDBpedia dbpedia:United_States ;
+    gmont:hasCO2Emissions "104.261411169991"^^xsd:float ;
+    gmont:hasGDPPerCapita "63515.9491807833"^^xsd:float ;
+    gmont:hasLifeExpectancy "76.9804878048781"^^xsd:float ;
+    gmont:hasPopulationDensity "36.248222996211"^^xsd:float .
+
+gmres:UZB a gmont:Country ;
+    rdfs:label "Uzbekistan"@en ;
+    gmont:exactMatchDBpedia dbpedia:Uzbekistan ;
+    gmont:hasCO2Emissions "27.0104302839006"^^xsd:float ;
+    gmont:hasGDPPerCapita "1978.28051860763"^^xsd:float ;
+    gmont:hasLifeExpectancy "71.461"^^xsd:float ;
+    gmont:hasPopulationDensity "76.2200658118688"^^xsd:float .
+
+gmres:VCT a gmont:Country ;
+    rdfs:label "Saint Vincent and the Grenadines"@en ;
+    gmont:exactMatchDBpedia dbpedia:Saint_Vincent_and_the_Grenadines ;
+    gmont:hasCO2Emissions "16.805566174784"^^xsd:float ;
+    gmont:hasGDPPerCapita "8351.20324040982"^^xsd:float ;
+    gmont:hasLifeExpectancy "69.605"^^xsd:float ;
+    gmont:hasPopulationDensity "265.451282051282"^^xsd:float .
+
+gmres:VEN a gmont:Country ;
+    rdfs:label "Venezuela"@en ;
+    gmont:exactMatchDBpedia dbpedia:Venezuela ;
+    gmont:hasCO2Emissions "20.3602238265569"^^xsd:float ;
+    gmont:hasGDPPerCapita "1506.0436210041"^^xsd:float ;
+    gmont:hasLifeExpectancy "72.369"^^xsd:float ;
+    gmont:hasPopulationDensity "32.2476923076923"^^xsd:float .
+
+gmres:VNM a gmont:Country ;
+    rdfs:label "Vietnam"@en ;
+    gmont:exactMatchDBpedia dbpedia:Vietnam ;
+    gmont:hasCO2Emissions "29.4115207051187"^^xsd:float ;
+    gmont:hasGDPPerCapita "3534.03953482647"^^xsd:float ;
+    gmont:hasLifeExpectancy "75.383"^^xsd:float ;
+    gmont:hasPopulationDensity "312.923153250018"^^xsd:float .
+
+gmres:VUT a gmont:Country ;
+    rdfs:label "Vanuatu"@en ;
+    gmont:exactMatchDBpedia dbpedia:Vanuatu ;
+    gmont:hasCO2Emissions "3.11339974653897"^^xsd:float ;
+    gmont:hasGDPPerCapita "3042.98711598286"^^xsd:float ;
+    gmont:hasLifeExpectancy "70.385"^^xsd:float ;
+    gmont:hasPopulationDensity "24.5166529942576"^^xsd:float .
+
+gmres:WSM a gmont:Country ;
+    rdfs:label "Samoa"@en ;
+    gmont:exactMatchDBpedia dbpedia:Samoa ;
+    gmont:hasCO2Emissions "7.68625918326517"^^xsd:float ;
+    gmont:hasGDPPerCapita "4099.59660548583"^^xsd:float ;
+    gmont:hasLifeExpectancy "70.727"^^xsd:float ;
+    gmont:hasPopulationDensity "76.2388489208633"^^xsd:float .
+
+gmres:ZAF a gmont:Country ;
+    rdfs:label "South Africa"@en ;
+    gmont:exactMatchDBpedia dbpedia:South_Africa ;
+    gmont:hasCO2Emissions "53.5005051790225"^^xsd:float ;
+    gmont:hasGDPPerCapita "5580.60383075189"^^xsd:float ;
+    gmont:hasLifeExpectancy "65.15"^^xsd:float ;
+    gmont:hasPopulationDensity "49.9240625180325"^^xsd:float .
+
+gmres:ZMB a gmont:Country ;
+    rdfs:label "Zambia"@en ;
+    gmont:exactMatchDBpedia dbpedia:Zambia ;
+    gmont:hasCO2Emissions "3.21522170003088"^^xsd:float ;
+    gmont:hasGDPPerCapita "951.644316655957"^^xsd:float ;
+    gmont:hasLifeExpectancy "63.361"^^xsd:float ;
+    gmont:hasPopulationDensity "25.6384872005273"^^xsd:float .
+
+gmres:ZWE a gmont:Country ;
+    rdfs:label "Zimbabwe"@en ;
+    gmont:exactMatchDBpedia dbpedia:Zimbabwe ;
+    gmont:hasCO2Emissions "4.2438683760075"^^xsd:float ;
+    gmont:hasGDPPerCapita "2059.67445384499"^^xsd:float ;
+    gmont:hasLifeExpectancy "61.53"^^xsd:float ;
+    gmont:hasPopulationDensity "40.13671448882"^^xsd:float .
+
+gmont: a owl:Ontology ;
+    rdfs:label "Global Metrics Ontology"@en ;
+    dcterms:description "An ontology to describe global metrics like GDP, Population Density, Life Expectancy, and CO2 emissions for countries."@en ;
+    rdfs:comment "A structured vocabulary for Global Metrics. It defines the Country class, its Data Properties (indicators), and Object Properties for interlinking."@en ;
+    owl:versionInfo "1.1"@en .
+
+gmont:Country a owl:Class ;
+    rdfs:label "Country"@en ;
+    rdfs:comment "A sovereign state, nation, or territory."@en ;
+    rdfs:isDefinedBy gmont: ;
+    skos:definition "A distinct territorial body or political entity."@en ;
+    skos:prefLabel "Country"@en .
+

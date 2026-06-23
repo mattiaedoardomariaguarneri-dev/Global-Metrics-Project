@@ -1,0 +1,81 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix gmont: <http://globalmetrics.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+gmont:exactMatchDBpedia a owl:ObjectProperty ;
+    rdfs:label "exact match DBpedia"@en ;
+    rdfs:comment "Links the Country to its corresponding DBpedia resource."@en ;
+    rdfs:domain gmont:Country ;
+    rdfs:isDefinedBy gmont: ;
+    rdfs:subPropertyOf owl:sameAs .
+
+gmont:hasCO2Emissions a owl:DatatypeProperty ;
+    rdfs:label "has CO2 emissions"@en ;
+    dcterms:date "2020"^^xsd:gYear ;
+    qudt:unit "Metric tons per capita"@en ;
+    rdfs:comment "The CO2 emissions (metric tons per capita)."@en ;
+    rdfs:domain gmont:Country ;
+    rdfs:isDefinedBy gmont: ;
+    rdfs:range xsd:float ;
+    skos:notation "CO2_PC" ;
+    skos:prefLabel "CO2 Emissions per capita"@en ;
+    skos:scopeNote "Emissions stemming from the burning of fossil fuels and the manufacture of cement."@en ;
+    prov:wasDerivedFrom <https://data.worldbank.org/indicator/EN.ATM.CO2E.PC> .
+
+gmont:hasGDPPerCapita a owl:DatatypeProperty ;
+    rdfs:label "has GDP per capita"@en ;
+    dcterms:date "2020"^^xsd:gYear ;
+    qudt:unit "Current US$"@en ;
+    rdfs:comment "The Gross Domestic Product per capita in current US dollars."@en ;
+    rdfs:domain gmont:Country ;
+    rdfs:isDefinedBy gmont: ;
+    rdfs:range xsd:float ;
+    skos:notation "GDP_PC" ;
+    skos:prefLabel "GDP per capita (US$)"@en ;
+    skos:scopeNote "GDP divided by midyear population."@en ;
+    prov:wasDerivedFrom <https://data.worldbank.org/indicator/NY.GDP.PCAP.CD> .
+
+gmont:hasLifeExpectancy a owl:DatatypeProperty ;
+    rdfs:label "has life expectancy"@en ;
+    dcterms:date "2020"^^xsd:gYear ;
+    qudt:unit "Years"@en ;
+    rdfs:comment "The life expectancy at birth, total (years)."@en ;
+    rdfs:domain gmont:Country ;
+    rdfs:isDefinedBy gmont: ;
+    rdfs:range xsd:float ;
+    skos:notation "LIFE_EXP" ;
+    skos:prefLabel "Life Expectancy at Birth"@en ;
+    skos:scopeNote "Indicates the number of years a newborn infant would live if prevailing patterns of mortality at the time of its birth were to stay the same."@en ;
+    prov:wasDerivedFrom <https://data.worldbank.org/indicator/SP.DYN.LE00.IN> .
+
+gmont:hasPopulationDensity a owl:DatatypeProperty ;
+    rdfs:label "has population density"@en ;
+    dcterms:date "2020"^^xsd:gYear ;
+    qudt:unit "People per sq. km"@en ;
+    rdfs:comment "The population density (people per sq. km)."@en ;
+    rdfs:domain gmont:Country ;
+    rdfs:isDefinedBy gmont: ;
+    rdfs:range xsd:float ;
+    skos:notation "POP_DENS" ;
+    skos:prefLabel "Population Density"@en ;
+    skos:scopeNote "Calculated as total population divided by land area."@en ;
+    prov:wasDerivedFrom <https://data.worldbank.org/indicator/EN.POP.DNST> .
+
+gmont:Country a owl:Class ;
+    rdfs:label "Country"@en ;
+    rdfs:comment "A sovereign state, nation, or territory."@en ;
+    rdfs:isDefinedBy gmont: ;
+    skos:definition "A distinct territorial body or political entity."@en ;
+    skos:prefLabel "Country"@en .
+
+gmont: a owl:Ontology ;
+    rdfs:label "Global Metrics Ontology"@en ;
+    dcterms:description "An ontology to describe global metrics like GDP, Population Density, Life Expectancy, and CO2 emissions for countries."@en ;
+    rdfs:comment "A structured vocabulary for Global Metrics. It defines the Country class, its Data Properties (indicators), and Object Properties for interlinking."@en ;
+    owl:versionInfo "1.1"@en .
+
