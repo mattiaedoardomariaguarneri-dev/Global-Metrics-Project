@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "opendata-flowlib"
+version = "0.1.0"
+description = "Libreria modulare per pipeline di analisi Open Data"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas>=2.0",
+    "numpy",
+    "plotly",
+    "pdfplumber",
+    "openpyxl",
+    "requests",
+    "pyyaml",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-cov"]
+viz = ["matplotlib", "folium", "seaborn"]
+extra = ["camelot-py", "scikit-learn"]
+rdf = ["rdflib", "SPARQLWrapper"]
+
+[tool.pytest.ini_options]
+testpaths = ["opendata_flowlib/tests"]

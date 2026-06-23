@@ -1,0 +1,67 @@
+{
+    "name": "global-metrics-2020",
+    "title": "Global Metrics 2020: GDP, Population Density, Life Expectancy and CO2 Emissions",
+    "description": "Un dataset integrato a 5 stelle contenente indicatori globali della World Bank per l'anno 2020, interconnesso a DBpedia.",
+    "licenses": [
+        {
+            "id": "CC-BY-4.0",
+            "name": "Creative Commons Attribution 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/"
+        }
+    ],
+    "resources": [
+        {
+            "name": "global_metrics_2020",
+            "path": "processed/csv/global_metrics_2020.csv",
+            "profile": "tabular-data-resource",
+            "format": "csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country_name",
+                        "type": "string",
+                        "description": "Name of the country"
+                    },
+                    {
+                        "name": "country_code",
+                        "type": "string",
+                        "description": "ISO Alpha-3 code"
+                    },
+                    {
+                        "name": "dbpedia_uri",
+                        "type": "string",
+                        "description": "DBpedia Resource URI (5-star link)"
+                    },
+                    {
+                        "name": "population_density",
+                        "type": "number",
+                        "description": "Population density (people per sq. km)"
+                    },
+                    {
+                        "name": "gdp_per_capita",
+                        "type": "number",
+                        "description": "GDP per capita (current US$)"
+                    },
+                    {
+                        "name": "life_expectancy",
+                        "type": "number",
+                        "description": "Life expectancy at birth, total (years)"
+                    },
+                    {
+                        "name": "co2_emissions",
+                        "type": "number",
+                        "description": "CO2 emissions (metric tons per capita)"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "global_metrics_rdf",
+            "path": "processed/rdf/global_metrics.ttl",
+            "format": "ttl",
+            "mediatype": "text/turtle",
+            "description": "Knowledge Graph in formato Turtle (RDF) con ontologia fittizia e interlinking a DBpedia."
+        }
+    ]
+}
